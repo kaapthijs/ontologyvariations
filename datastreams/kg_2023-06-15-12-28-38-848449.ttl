@@ -1,0 +1,50 @@
+@prefix ns1: <http://example.com/locobot#> .
+@prefix ns2: <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix ns3: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns4: <https://www.w3.org/TR/2022/CRD-owl-time-20221115#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:pan a <http://www.w3.org/ns/sosa/#Actuator> ;
+    ns1:hasJointValue 1.416882e+00 .
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-38-848449.jpg> ns4:hasTime "2023-06-15-12-28-38-848449" .
+
+<http://example.com/object#Chair20> a <http://webprotege.stanford.edu/RBiBEwV6E98jD03X6r6lHkx> ;
+    ns1:hasSize """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+    ns1:seenAt "2023-06-15-12-28-38-848449" ;
+    ns2:hasOrientationVector """x: 0.11868390819605702
+y: 0.09276018348030321
+z: -0.7630121763499599
+w: -0.6285873821814342""" ;
+    ns3:hasLocation """x: 2.758677325375287
+y: -1.5407979752081897
+z: 0.30132408068738237""" .
+
+<http://example.com/object#cafe18> a <http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7> ;
+    ns1:hasSize """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+    ns1:seenAt "2023-06-15-12-28-38-848449" ;
+    ns2:hasOrientationVector """x: 0.09281457991602314
+y: -0.11863845221403557
+z: -0.6289120596511001
+w: 0.7627450377660161""" ;
+    ns3:hasLocation """x: -0.3668439695001131
+y: -3.949977439543914
+z: -0.8530084890010737""" .
+
+<http://example.com/object#coke_can19> a <http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf> ;
+    ns1:hasSize """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+    ns1:seenAt "2023-06-15-12-28-38-848449" ;
+    ns2:hasOrientationVector """x: -0.5941353957439205
+y: -0.5382545329464744
+z: 0.49411098040568124
+w: 0.3363621981277389""" ;
+    ns3:hasLocation """x: 1.0651693651728233
+y: -0.6811924341647811
+z: -0.20072279476258145""" .
+

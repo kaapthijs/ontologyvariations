@@ -1,0 +1,2707 @@
+@prefix : <http://www.semanticweb.org/thijs/ontologies/laptopontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix thijs: <http://www.semanticweb.org/thijs/ontologies/laptopontology> .
+@prefix thijs2: <urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@base <http://www.semanticweb.org/thijs/ontologies/laptopontology> .
+
+<http://www.semanticweb.org/thijs/ontologies/laptopontology> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <http://www.semanticweb.org/thijs/ontologies/laptopontology/2.0> ;
+                                                              owl:imports <file:/C:/Users/thijs/Desktop/streams/2023-06-15-12-28-38/kg_2023-06-15-12-28-40-567907.ttl> ,
+                                                                          <file:/C:/Users/thijs/Desktop/streams/2023-06-15-12-28-38/kg_2023-06-15-12-28-49-654284.ttl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.com/locobot#hasJointValue
+<http://example.com/locobot#hasJointValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.com/locobot#hasSize
+<http://example.com/locobot#hasSize> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.com/locobot#seenAt
+<http://example.com/locobot#seenAt> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector
+<http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime
+<https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7knXWbfbHX7sLJ18gUXQKL
+webprotege:R7knXWbfbHX7sLJ18gUXQKL rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasColorValue"@en .
+
+
+###  http://webprotege.stanford.edu/R9NoCBglmnVNPFtbsMOatpR
+webprotege:R9NoCBglmnVNPFtbsMOatpR rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasShape"@en .
+
+
+###  http://webprotege.stanford.edu/R9wvot7BtR2dBJcWzjn2zNt
+webprotege:R9wvot7BtR2dBJcWzjn2zNt rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasWeight"@en .
+
+
+###  http://webprotege.stanford.edu/R9zxmOr4HnzHJ5fNIPTHHjb
+webprotege:R9zxmOr4HnzHJ5fNIPTHHjb rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasColor"@en .
+
+
+###  http://webprotege.stanford.edu/RBtsJxDgY517REN4ZQod3yv
+webprotege:RBtsJxDgY517REN4ZQod3yv rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "recognizedAs"@en .
+
+
+###  http://webprotege.stanford.edu/RCYrfGBZUimZgN5yyvtszyP
+webprotege:RCYrfGBZUimZgN5yyvtszyP rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:domain webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:range webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "madeOf"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R0Ai8EBlqGqqFjBQ6wef19
+webprotege:R0Ai8EBlqGqqFjBQ6wef19 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                  rdfs:label "Skis"@en .
+
+
+###  http://webprotege.stanford.edu/R6aIeFrPbjLN2h34NP0aku
+webprotege:R6aIeFrPbjLN2h34NP0aku rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8KX3gIN91RhyIRrBvIyAS8 ;
+                                  rdfs:label "Living beings"@en .
+
+
+###  http://webprotege.stanford.edu/R74vfPY2ROIxB89zhnRWbBK
+webprotege:R74vfPY2ROIxB89zhnRWbBK rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Cow"@en .
+
+
+###  http://webprotege.stanford.edu/R774YDchH9zsoI0nmWIUoFy
+webprotege:R774YDchH9zsoI0nmWIUoFy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Surfboard"@en .
+
+
+###  http://webprotege.stanford.edu/R78P2MaEY8wM4I77vyBXDNy
+webprotege:R78P2MaEY8wM4I77vyBXDNy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Donut"@en .
+
+
+###  http://webprotege.stanford.edu/R78s5fbyeeDBgbDch3ZaIme
+webprotege:R78s5fbyeeDBgbDch3ZaIme rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Backpack"@en .
+
+
+###  http://webprotege.stanford.edu/R79LqZRZP4pPXY8pTPIR2HX
+webprotege:R79LqZRZP4pPXY8pTPIR2HX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Vase"@en .
+
+
+###  http://webprotege.stanford.edu/R7JL8HxiD5VVr8atDVQmHm5
+webprotege:R7JL8HxiD5VVr8atDVQmHm5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "Inorganic"@en .
+
+
+###  http://webprotege.stanford.edu/R7N01T0bWtYY8ErpSi32cz5
+webprotege:R7N01T0bWtYY8ErpSi32cz5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Sports Ball"@en .
+
+
+###  http://webprotege.stanford.edu/R7R06jdJlQ5ISq7H5F5s4pY
+webprotege:R7R06jdJlQ5ISq7H5F5s4pY rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Giraffe"@en .
+
+
+###  http://webprotege.stanford.edu/R7SLrXciGGIROd3MAcPHSEF
+webprotege:R7SLrXciGGIROd3MAcPHSEF rdf:type owl:Class ;
+                                   rdfs:label "Beer" .
+
+
+###  http://webprotege.stanford.edu/R7Tf1ROl00VviR2R9t0PKpd
+webprotege:R7Tf1ROl00VviR2R9t0PKpd rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Keyboard"@en .
+
+
+###  http://webprotege.stanford.edu/R7Vq8kIY9OVdFLCeEZfv8Ah
+webprotege:R7Vq8kIY9OVdFLCeEZfv8Ah rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Motorcycle"@en .
+
+
+###  http://webprotege.stanford.edu/R7WaW1aWj74Li3CShHhbLE5
+webprotege:R7WaW1aWj74Li3CShHhbLE5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Tennis Racket"@en .
+
+
+###  http://webprotege.stanford.edu/R7Xy7VqI1Ca5ESCOBQvb5I9
+webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Furniture"@en .
+
+
+###  http://webprotege.stanford.edu/R7gpMfeLYaIveWpHPyidPz6
+webprotege:R7gpMfeLYaIveWpHPyidPz6 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Boat"@en .
+
+
+###  http://webprotege.stanford.edu/R7hDYU8IEkwVkVGCT4Dheuq
+webprotege:R7hDYU8IEkwVkVGCT4Dheuq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                   rdfs:label "Flatware"@en .
+
+
+###  http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7
+webprotege:R7i58zpys5WbCYiqXQutJ7 rdf:type owl:Class ;
+                                  rdfs:label "Cafe" .
+
+
+###  http://webprotege.stanford.edu/R7j35dgpaerUxIViTub9Zqn
+webprotege:R7j35dgpaerUxIViTub9Zqn rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Truck"@en .
+
+
+###  http://webprotege.stanford.edu/R7kul5MTek1YUGg8ySVDaz0
+webprotege:R7kul5MTek1YUGg8ySVDaz0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Bed"@en .
+
+
+###  http://webprotege.stanford.edu/R7msKt1JC9M1d1wSteenKcc
+webprotege:R7msKt1JC9M1d1wSteenKcc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Pizza"@en .
+
+
+###  http://webprotege.stanford.edu/R7oKEUNHeN7cTcTJICRJbHL
+webprotege:R7oKEUNHeN7cTcTJICRJbHL rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Rectangular"@en .
+
+
+###  http://webprotege.stanford.edu/R7v56nmtW9FcnfocwUjdVVj
+webprotege:R7v56nmtW9FcnfocwUjdVVj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Toy"@en .
+
+
+###  http://webprotege.stanford.edu/R7wwqxxZWSqg2f22MvxUB4l
+webprotege:R7wwqxxZWSqg2f22MvxUB4l rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Airplane"@en .
+
+
+###  http://webprotege.stanford.edu/R808yCII86akPZY0WQeBMVq
+webprotege:R808yCII86akPZY0WQeBMVq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Luggage"@en .
+
+
+###  http://webprotege.stanford.edu/R82mZzUESr8PiSGJiKnEufK
+webprotege:R82mZzUESr8PiSGJiKnEufK rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Vechicle"@en .
+
+
+###  http://webprotege.stanford.edu/R83vsue8cwsl19plXysA2Hp
+webprotege:R83vsue8cwsl19plXysA2Hp rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Metal"@en .
+
+
+###  http://webprotege.stanford.edu/R84rOdf64XtBPIG2vy3MA7M
+webprotege:R84rOdf64XtBPIG2vy3MA7M rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Frisbee"@en .
+
+
+###  http://webprotege.stanford.edu/R89FeREcu8vdbWJAMi5hSor
+webprotege:R89FeREcu8vdbWJAMi5hSor rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC5UwUA3SRViEUwHlNMQeXM ;
+                                   rdfs:label "Battery"@en .
+
+
+###  http://webprotege.stanford.edu/R8FID7iAbg9ls9YrhhvgFPm
+webprotege:R8FID7iAbg9ls9YrhhvgFPm rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Lemon" .
+
+
+###  http://webprotege.stanford.edu/R8HbpOfkhthTbqNfyp6HwjI
+webprotege:R8HbpOfkhthTbqNfyp6HwjI rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                   rdfs:label "Traffic Light"@en .
+
+
+###  http://webprotege.stanford.edu/R8KX3gIN91RhyIRrBvIyAS8
+webprotege:R8KX3gIN91RhyIRrBvIyAS8 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBnDT7IKWsqsAlihm4BtEGG ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                                     owl:someValuesFrom webprotege:R9wxSLBm7koiff9mLWXNuxl
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9wvot7BtR2dBJcWzjn2zNt ;
+                                                     owl:someValuesFrom webprotege:RCx8GlfFjHVHInuQpaQUJNX
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                                     owl:someValuesFrom webprotege:R8iUgqiouBkkYUjXnDbvokD
+                                                   ] ;
+                                   rdfs:label "Physical entity"@en .
+
+
+###  http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf
+webprotege:R8KuHKp8ZnpTz0JgGwYAFmf rdf:type owl:Class ;
+                                   rdfs:label "Coke_can" .
+
+
+###  http://webprotege.stanford.edu/R8Wk33fm0WYF5XUBos1Gc6e
+webprotege:R8Wk33fm0WYF5XUBos1Gc6e rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Toaster"@en .
+
+
+###  http://webprotege.stanford.edu/R8Xk2JAdRC7tRoQ63BLs7A2
+webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vSvtlf6LA1LRO2fvMBAEx ;
+                                   rdfs:label "Appliance"@en .
+
+
+###  http://webprotege.stanford.edu/R8g1I9sxHpUIHN6XyioU6zk
+webprotege:R8g1I9sxHpUIHN6XyioU6zk rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Material"@en .
+
+
+###  http://webprotege.stanford.edu/R8gj4y2TT6EZETMkd0BBLQf
+webprotege:R8gj4y2TT6EZETMkd0BBLQf rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polyvinyl Chloride"@en ;
+                                   skos:altLabel 3 ,
+                                                 "PVC"^^xsd:string ,
+                                                 "V"^^xsd:string ,
+                                                 "Vinyl"^^xsd:string ;
+                                   skos:definition "This hard and rigid plastic is resistant to chemicals and weathering, making it desired for building and construction applications; while the fact that it doesn’t conduct electricity makes it common for high-tech applications, such as wires and cable. It’s also widely used in medical applications because it’s impermeable to germs, is easily disinfected and provides single-use applications that reduce infections in healthcare. On the flip side, we must note that PVC is the most dangerous plastic to human health, known to leach dangerous toxins throughout its entire lifecycle (eg: lead, dioxins, vinyl chloride)."@en ;
+                                   skos:example "Plumbing pipes, credit cards, human and pet toys, rain gutters, teething rings, IV fluid bags and medical tubing and oxygen masks."@en .
+
+
+###  http://webprotege.stanford.edu/R8gtPN920yE3QXbxiZ8uw2W
+webprotege:R8gtPN920yE3QXbxiZ8uw2W rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Oven"@en .
+
+
+###  http://webprotege.stanford.edu/R8iUgqiouBkkYUjXnDbvokD
+webprotege:R8iUgqiouBkkYUjXnDbvokD rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Color"@en .
+
+
+###  http://webprotege.stanford.edu/R8vSvtlf6LA1LRO2fvMBAEx
+webprotege:R8vSvtlf6LA1LRO2fvMBAEx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Device"@en .
+
+
+###  http://webprotege.stanford.edu/R8vrxFiYnrjoecwZvOyVXll
+webprotege:R8vrxFiYnrjoecwZvOyVXll rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RKYeflRbbcFq2No64bx9ZY ;
+                                   rdfs:label "Household Fixtures"@en .
+
+
+###  http://webprotege.stanford.edu/R94uFZngrFPQGy6R6FA8hu3
+webprotege:R94uFZngrFPQGy6R6FA8hu3 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Cake"@en .
+
+
+###  http://webprotege.stanford.edu/R97KQR2V6Hz9GGk0DS1Bh1K
+webprotege:R97KQR2V6Hz9GGk0DS1Bh1K rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Hair drier"@en .
+
+
+###  http://webprotege.stanford.edu/R9D4DuGkf3igT9Il7Yb47FM
+webprotege:R9D4DuGkf3igT9Il7Yb47FM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC5UwUA3SRViEUwHlNMQeXM ;
+                                   rdfs:label "Electronics"@en .
+
+
+###  http://webprotege.stanford.edu/R9IO9X8T4lCqtYtUkQDoUUF
+webprotege:R9IO9X8T4lCqtYtUkQDoUUF rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Wine Glass"@en .
+
+
+###  http://webprotege.stanford.edu/R9NxcwHBxkE6qebmzH064s
+webprotege:R9NxcwHBxkE6qebmzH064s rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Yellow"@en .
+
+
+###  http://webprotege.stanford.edu/R9OSKj4gXkHRJZHl815ChEq
+webprotege:R9OSKj4gXkHRJZHl815ChEq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Vegetable"@en .
+
+
+###  http://webprotege.stanford.edu/R9Oi64HLtPHjsemHLH3Qhfy
+webprotege:R9Oi64HLtPHjsemHLH3Qhfy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Meat"@en .
+
+
+###  http://webprotege.stanford.edu/R9STkmxNXbezpcQSd9kpvTq
+webprotege:R9STkmxNXbezpcQSd9kpvTq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Sports equipment"@en .
+
+
+###  http://webprotege.stanford.edu/R9THBn4AV2W3Dxp1nk3mSJZ
+webprotege:R9THBn4AV2W3Dxp1nk3mSJZ rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Mouse"@en .
+
+
+###  http://webprotege.stanford.edu/R9V1QIDTrC8548j1X9TlWcv
+webprotege:R9V1QIDTrC8548j1X9TlWcv rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Banana"@en .
+
+
+###  http://webprotege.stanford.edu/R9WRideYfbGys6OIZlnnrKN
+webprotege:R9WRideYfbGys6OIZlnnrKN rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                   rdfs:label "Spoon"@en .
+
+
+###  http://webprotege.stanford.edu/R9b3kxSK55Q2JOPgEaRbPS7
+webprotege:R9b3kxSK55Q2JOPgEaRbPS7 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Potted Plant"@en .
+
+
+###  http://webprotege.stanford.edu/R9cj2lOLgLf6tPk3UDyQoxT
+webprotege:R9cj2lOLgLf6tPk3UDyQoxT rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "High-Density Polyethylene"@en ;
+                                   skos:altLabel 2 ,
+                                                 "HDPE"^^xsd:string ;
+                                   skos:definition "Collectively, Polyethylene is the most common plastics in the world, but it’s classified into three types: High-Density, Low-Density and Linear Low-Density. High-Density Polyethylene is strong and resistant to moisture and chemicals, which makes it ideal for cartons, containers, pipes and other building materials."@en ;
+                                   skos:example "Milk cartons, detergent bottles, cereal box liners, toys, buckets, park benches and rigid pipes."@en .
+
+
+###  http://webprotege.stanford.edu/R9f2Wp4ohtpKnkG773yi7hs
+webprotege:R9f2Wp4ohtpKnkG773yi7hs rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Baseball Glove"@en .
+
+
+###  http://webprotege.stanford.edu/R9f3EYxkCaVcMehc9HP1KnE
+webprotege:R9f3EYxkCaVcMehc9HP1KnE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9upIGix4FgiLrMRTARsN4X ;
+                                   rdfs:label "Toothbrush"@en .
+
+
+###  http://webprotege.stanford.edu/R9fObUKXBn9wPSHERp2oL4E
+webprotege:R9fObUKXBn9wPSHERp2oL4E rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Couch"@en .
+
+
+###  http://webprotege.stanford.edu/R9gNts85LFhzYWISjHMX0C
+webprotege:R9gNts85LFhzYWISjHMX0C rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                  rdfs:label "Remote"@en .
+
+
+###  http://webprotege.stanford.edu/R9hNB9omIjr6Z4rpeQZUuEJ
+webprotege:R9hNB9omIjr6Z4rpeQZUuEJ rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Cat"@en .
+
+
+###  http://webprotege.stanford.edu/R9lQgb8ZyKQGDPQFCDDwKdo
+webprotege:R9lQgb8ZyKQGDPQFCDDwKdo rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Car"@en .
+
+
+###  http://webprotege.stanford.edu/R9upIGix4FgiLrMRTARsN4X
+webprotege:R9upIGix4FgiLrMRTARsN4X rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                   rdfs:label "Tool"@en .
+
+
+###  http://webprotege.stanford.edu/R9wxSLBm7koiff9mLWXNuxl
+webprotege:R9wxSLBm7koiff9mLWXNuxl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Shape"@en .
+
+
+###  http://webprotege.stanford.edu/R9zi3LWcsVbAdRX6lQmkwk4
+webprotege:R9zi3LWcsVbAdRX6lQmkwk4 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Baseball Bat"@en .
+
+
+###  http://webprotege.stanford.edu/RB0Wt3POXA2xN39v5Fj6Yib
+webprotege:RB0Wt3POXA2xN39v5Fj6Yib rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R6aIeFrPbjLN2h34NP0aku ;
+                                   rdfs:label "Animal"@en .
+
+
+###  http://webprotege.stanford.edu/RB2VNRzE8P2HEbI6tUfTJ5q
+webprotege:RB2VNRzE8P2HEbI6tUfTJ5q rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polypropylene"@en ;
+                                   skos:altLabel 5 ,
+                                                 "PP"^^xsd:string ;
+                                   skos:definition "This is one of the most durable types of plastic. It is more heat resistant than some others, which makes it ideal for such things as food packaging and food storage that’s made to hold hot items or be heated itself. It’s flexible enough to allow for mild bending, but it retains its shape and strength for a long time."@en ;
+                                   skos:example "Straws, bottle caps, prescription bottles, hot food containers, packaging tape, disposable diapers and DVD/CD boxes."@en .
+
+
+###  http://webprotege.stanford.edu/RB7nLXx7YBatESj1BKMOj93
+webprotege:RB7nLXx7YBatESj1BKMOj93 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Glass"@en .
+
+
+###  http://webprotege.stanford.edu/RB7yxF8fQbQ8MVgxcDnyV1g
+webprotege:RB7yxF8fQbQ8MVgxcDnyV1g rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RvYDNqeobt0fsaRhUNUHOy ;
+                                   rdfs:label "Tie"@en .
+
+
+###  http://webprotege.stanford.edu/RBEWf6OBz3IBBXrgkRLO0Lm
+webprotege:RBEWf6OBz3IBBXrgkRLO0Lm rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Skateboard"@en .
+
+
+###  http://webprotege.stanford.edu/RBKM9ab24o7vhABbDgC17nM
+webprotege:RBKM9ab24o7vhABbDgC17nM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Dining Table"@en .
+
+
+###  http://webprotege.stanford.edu/RBRgPDRZe6pGG9GlJSQlvO4
+webprotege:RBRgPDRZe6pGG9GlJSQlvO4 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "TV"@en .
+
+
+###  http://webprotege.stanford.edu/RBVqaHlXcJu1WTejQhH7wkj
+webprotege:RBVqaHlXcJu1WTejQhH7wkj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Cup"@en .
+
+
+###  http://webprotege.stanford.edu/RBWCOYQphFRqHeQsoNjAZOu
+webprotege:RBWCOYQphFRqHeQsoNjAZOu rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Cylinder"@en .
+
+
+###  http://webprotege.stanford.edu/RBXqigg4TxqgfR5FLlYQX4
+webprotege:RBXqigg4TxqgfR5FLlYQX4 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                  rdfs:label "Zebra"@en .
+
+
+###  http://webprotege.stanford.edu/RBYNY0iqfanryuIPzZ1u6vj
+webprotege:RBYNY0iqfanryuIPzZ1u6vj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Refrigerator"@en .
+
+
+###  http://webprotege.stanford.edu/RBam8q6px516D0SNZraWsck
+webprotege:RBam8q6px516D0SNZraWsck rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Horse"@en .
+
+
+###  http://webprotege.stanford.edu/RBcA7g8R3NaQMj9dsnCyctw
+webprotege:RBcA7g8R3NaQMj9dsnCyctw rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Bear"@en .
+
+
+###  http://webprotege.stanford.edu/RBiBEwV6E98jD03X6r6lHkx
+webprotege:RBiBEwV6E98jD03X6r6lHkx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Chair"@en .
+
+
+###  http://webprotege.stanford.edu/RBidzG8kOz1dElvXIJ68mdR
+webprotege:RBidzG8kOz1dElvXIJ68mdR rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Round"@en .
+
+
+###  http://webprotege.stanford.edu/RBjIqamHoZPUhmk4DUNxAlX
+webprotege:RBjIqamHoZPUhmk4DUNxAlX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9upIGix4FgiLrMRTARsN4X ;
+                                   rdfs:label "Scissors"@en .
+
+
+###  http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq
+webprotege:RBmM7ZW2pUHqqPrROBJ3YKq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Food"@en .
+
+
+###  http://webprotege.stanford.edu/RBnDT7IKWsqsAlihm4BtEGG
+webprotege:RBnDT7IKWsqsAlihm4BtEGG rdf:type owl:Class ;
+                                   rdfs:label "Entity"@en .
+
+
+###  http://webprotege.stanford.edu/RBvJc2lNe87iJv5zFK9ZxXF
+webprotege:RBvJc2lNe87iJv5zFK9ZxXF rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polystyrene"@en ;
+                                   skos:altLabel 6 ,
+                                                 "PS"^^xsd:string ,
+                                                 "Styrofoam"^^xsd:string ;
+                                   skos:definition "Better known as Styrofoam, this rigid plastic is low-cost and insulates very well, which has made it a staple in the food, packaging and construction industries. Like PVC, polystyrene is considered to be a dangerous plastic. It can easily leach harmful toxins such as styrene (a neurotoxin), which can easily then be absorbed by food and thus ingested by humans."@en ;
+                                   skos:example "Cups, takeout food containers, shipping and product packaging, egg cartons, cutlery and building insulation."@en .
+
+
+###  http://webprotege.stanford.edu/RC2JmhbMLDrKtZIji1hgBRt
+webprotege:RC2JmhbMLDrKtZIji1hgBRt rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Plastic"@en .
+
+
+###  http://webprotege.stanford.edu/RC5UwUA3SRViEUwHlNMQeXM
+webprotege:RC5UwUA3SRViEUwHlNMQeXM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Hazardous"@en .
+
+
+###  http://webprotege.stanford.edu/RC5g7LkgzWg9SZasOrhmWik
+webprotege:RC5g7LkgzWg9SZasOrhmWik rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vrxFiYnrjoecwZvOyVXll ;
+                                   rdfs:label "Toilet"@en .
+
+
+###  http://webprotege.stanford.edu/RC7mm8Vkbb5jnOyLBs60FMo
+webprotege:RC7mm8Vkbb5jnOyLBs60FMo rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Train"@en .
+
+
+###  http://webprotege.stanford.edu/RCD1KWKIvmzNYQJJnx0lOBl
+webprotege:RCD1KWKIvmzNYQJJnx0lOBl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Bus"@en .
+
+
+###  http://webprotege.stanford.edu/RCFP4U5Y7H2vPhn8RsiTIN3
+webprotege:RCFP4U5Y7H2vPhn8RsiTIN3 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Kite"@en .
+
+
+###  http://webprotege.stanford.edu/RCKlxFwXlRzaw94gknKBvfx
+webprotege:RCKlxFwXlRzaw94gknKBvfx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                   rdfs:label "Fork"@en .
+
+
+###  http://webprotege.stanford.edu/RCLIyOqdh4jwKqWLVF8ZsCs
+webprotege:RCLIyOqdh4jwKqWLVF8ZsCs rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vrxFiYnrjoecwZvOyVXll ;
+                                   rdfs:label "Sink"@en .
+
+
+###  http://webprotege.stanford.edu/RCNlIUlYrkvfnU6CkTushuk
+webprotege:RCNlIUlYrkvfnU6CkTushuk rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Elephant"@en .
+
+
+###  http://webprotege.stanford.edu/RCSGMZIHg0uV1SVQBwyjkjN
+webprotege:RCSGMZIHg0uV1SVQBwyjkjN rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "Blue"@en .
+
+
+###  http://webprotege.stanford.edu/RCTjQm1Z7Ko94kXhzGWA6Bl
+webprotege:RCTjQm1Z7Ko94kXhzGWA6Bl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Bird"@en .
+
+
+###  http://webprotege.stanford.edu/RCVzeJkAP7dMgpAY16zmDnE
+webprotege:RCVzeJkAP7dMgpAY16zmDnE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:comment "This is one of the most commonly used plastics. It’s lightweight, strong, typically transparent and is often used in food packaging and fabrics (polyester)."@en ;
+                                   rdfs:label "Polyethylene Terephthalate"@en ;
+                                   skos:altLabel 1 ,
+                                                 "PET"^^xsd:string ,
+                                                 "PETE"^^xsd:string ;
+                                   skos:example "Beverage bottles, Food bottles/jars (salad dressing, peanut butter, honey, etc.) and polyester clothing or rope"@eb .
+
+
+###  http://webprotege.stanford.edu/RCeV1ZKU9OBOalkrtYg4yXX
+webprotege:RCeV1ZKU9OBOalkrtYg4yXX rdf:type owl:Class ;
+                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                         owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                         owl:someValuesFrom webprotege:RCg0thBzVa7RqR06evY8n7x
+                                                       ] ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Fruit"@en .
+
+
+###  http://webprotege.stanford.edu/RCg0thBzVa7RqR06evY8n7x
+webprotege:RCg0thBzVa7RqR06evY8n7x rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "Organic"@en .
+
+
+###  http://webprotege.stanford.edu/RCjzzEpj00ZjiSVXI44Sli0
+webprotege:RCjzzEpj00ZjiSVXI44Sli0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9OSKj4gXkHRJZHl815ChEq ;
+                                   rdfs:label "Carrot"@en .
+
+
+###  http://webprotege.stanford.edu/RCm0VvmOS61XrrymfdVDCAz
+webprotege:RCm0VvmOS61XrrymfdVDCAz rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Peach" .
+
+
+###  http://webprotege.stanford.edu/RCofUR8mpSt4OJ7uRCOsB9V
+webprotege:RCofUR8mpSt4OJ7uRCOsB9V rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Cell phone"@en .
+
+
+###  http://webprotege.stanford.edu/RCqiOdkGeKd3LqEKIXsYnZh
+webprotege:RCqiOdkGeKd3LqEKIXsYnZh rdf:type owl:Class ;
+                                   rdfs:label "Milk" .
+
+
+###  http://webprotege.stanford.edu/RCrl8SmbK0VzLKlF9zMKCEE
+webprotege:RCrl8SmbK0VzLKlF9zMKCEE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Dog"@en .
+
+
+###  http://webprotege.stanford.edu/RCtHfLEJg6l5LLwIu0fCiTc
+webprotege:RCtHfLEJg6l5LLwIu0fCiTc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Laptop"@en .
+
+
+###  http://webprotege.stanford.edu/RCx8GlfFjHVHInuQpaQUJNX
+webprotege:RCx8GlfFjHVHInuQpaQUJNX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Weight"@en .
+
+
+###  http://webprotege.stanford.edu/RCybIgWHx9rJjpHWXvtEJ24
+webprotege:RCybIgWHx9rJjpHWXvtEJ24 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "Black"@en .
+
+
+###  http://webprotege.stanford.edu/RDCgCRme5DftUt6nmtArNwE
+webprotege:RDCgCRme5DftUt6nmtArNwE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "White"@en .
+
+
+###  http://webprotege.stanford.edu/RDIyhmCXvCqICdpMqk9fI5F
+webprotege:RDIyhmCXvCqICdpMqk9fI5F rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Triangular"@en .
+
+
+###  http://webprotege.stanford.edu/RDJ4KJaH609bVd5TR720CML
+webprotege:RDJ4KJaH609bVd5TR720CML rdf:type owl:Class ;
+                                   rdfs:label "Salt" .
+
+
+###  http://webprotege.stanford.edu/RDOzhT58MS0B4lnwhk3KYLe
+webprotege:RDOzhT58MS0B4lnwhk3KYLe rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Suitcase"@en .
+
+
+###  http://webprotege.stanford.edu/RDSVTkKlZB3drplxMCXlGHf
+webprotege:RDSVTkKlZB3drplxMCXlGHf rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Other"@en ;
+                                   skos:altLabel 7 ;
+                                   skos:definition "This category is a catch-all for other types of plastic that don’t belong in any of the other six categories or are combinations of multiple types. We include it because you might occasionally come across the #7 recycling code, so it’s important to know what it means. The most important thing here is that these plastics aren’t typically recyclable."@en ;
+                                   skos:example "Eyeglasses, baby and sports bottles, electronics, CD/DVDs, lighting fixtures and clear plastic cutlery."@en .
+
+
+###  http://webprotege.stanford.edu/RDToVN6c9h84eeUaPK0MlKq
+webprotege:RDToVN6c9h84eeUaPK0MlKq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RMwg77kLl7zsXz91xl1cPY ;
+                                   rdfs:label "Book"@en .
+
+
+###  http://webprotege.stanford.edu/RDfwIVnudA7LLv2TmyvqkFP
+webprotege:RDfwIVnudA7LLv2TmyvqkFP rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                   rdfs:label "Fire Hydrant"@en .
+
+
+###  http://webprotege.stanford.edu/RDinQKsIE1x17h7jTLnp3hc
+webprotege:RDinQKsIE1x17h7jTLnp3hc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Sheep"@en .
+
+
+###  http://webprotege.stanford.edu/RDpk9eWpTQHrcWEc3HuypbC
+webprotege:RDpk9eWpTQHrcWEc3HuypbC rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9OSKj4gXkHRJZHl815ChEq ;
+                                   rdfs:label "Broccoli"@en .
+
+
+###  http://webprotege.stanford.edu/RDpyu1cmWlVTIP7uPJjcrk2
+webprotege:RDpyu1cmWlVTIP7uPJjcrk2 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Handbag"@en .
+
+
+###  http://webprotege.stanford.edu/RDscAxbVFrwncRg25OVPa5B
+webprotege:RDscAxbVFrwncRg25OVPa5B rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vSvtlf6LA1LRO2fvMBAEx ;
+                                   rdfs:label "Clock"@en .
+
+
+###  http://webprotege.stanford.edu/RDsnIFmH0maiqUCeCQ5ZTj0
+webprotege:RDsnIFmH0maiqUCeCQ5ZTj0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Low-Density Polyethylene"@en ;
+                                   skos:altLabel 4 ,
+                                                 "LDPE"^^xsd:string ;
+                                   skos:definition "A softer, clearer, and more flexible version of HDPE. It’s often used as a liner inside beverage cartons, and in corrosion-resistant work surfaces and other products."@en ;
+                                   skos:example "Plastic/cling wrap, sandwich and bread bags, bubble wrap, garbage bags, grocery bags and beverage cups."@en .
+
+
+###  http://webprotege.stanford.edu/RFNniCGnYdZKUjzIQVRMS4
+webprotege:RFNniCGnYdZKUjzIQVRMS4 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Strawberry" .
+
+
+###  http://webprotege.stanford.edu/RHRFUHuO95THMUmF0rT5ac
+webprotege:RHRFUHuO95THMUmF0rT5ac rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8KX3gIN91RhyIRrBvIyAS8 ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                                    owl:someValuesFrom webprotege:R9wxSLBm7koiff9mLWXNuxl
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                                    owl:someValuesFrom webprotege:R8iUgqiouBkkYUjXnDbvokD
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                    owl:someValuesFrom webprotege:R8g1I9sxHpUIHN6XyioU6zk
+                                                  ] ;
+                                  rdfs:label "Object"@en .
+
+
+###  http://webprotege.stanford.edu/RJnEEewRWTbuIm46ci6EnF
+webprotege:RJnEEewRWTbuIm46ci6EnF rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                  rdfs:label "Sandwich"@en .
+
+
+###  http://webprotege.stanford.edu/RKYeflRbbcFq2No64bx9ZY
+webprotege:RKYeflRbbcFq2No64bx9ZY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Fixture"@en .
+
+
+###  http://webprotege.stanford.edu/RMwg77kLl7zsXz91xl1cPY
+webprotege:RMwg77kLl7zsXz91xl1cPY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:comment "An object made by a human being, typically one of cultural or historical interest."^^xsd:string ;
+                                  rdfs:label "Artefact"@en .
+
+
+###  http://webprotege.stanford.edu/RNZ5D4CHFr9eBkuGVyRFru
+webprotege:RNZ5D4CHFr9eBkuGVyRFru rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Utensil"@en .
+
+
+###  http://webprotege.stanford.edu/ROLtsgjReYoukrUgHCySjw
+webprotege:ROLtsgjReYoukrUgHCySjw rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                  rdfs:label "Hot Dog"@en .
+
+
+###  http://webprotege.stanford.edu/RRI4398KdRQkhP1imJvtDl
+webprotege:RRI4398KdRQkhP1imJvtDl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Green"@en .
+
+
+###  http://webprotege.stanford.edu/RTD5wnz7hmZr2AuzOLadgm
+webprotege:RTD5wnz7hmZr2AuzOLadgm rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Orange"@en .
+
+
+###  http://webprotege.stanford.edu/RTmBIYFQJ9SIBCVTMzYspb
+webprotege:RTmBIYFQJ9SIBCVTMzYspb rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                  rdfs:label "Snowboard"@en .
+
+
+###  http://webprotege.stanford.edu/RWWDq0BxYsOMArNf5WgjzM
+webprotege:RWWDq0BxYsOMArNf5WgjzM rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Apple"@en .
+
+
+###  http://webprotege.stanford.edu/RYBCJyskVFeot1Wc1NL4Xl
+webprotege:RYBCJyskVFeot1Wc1NL4Xl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                  rdfs:label "Bowl"@en .
+
+
+###  http://webprotege.stanford.edu/RZ6QAI6NZ2zB0s9C6ILorY
+webprotege:RZ6QAI6NZ2zB0s9C6ILorY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Red"@en .
+
+
+###  http://webprotege.stanford.edu/RZlgWVOxorbGoEuCYnMOkr
+webprotege:RZlgWVOxorbGoEuCYnMOkr rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7v56nmtW9FcnfocwUjdVVj ;
+                                  rdfs:label "Teddy bear"@en .
+
+
+###  http://webprotege.stanford.edu/RcwieJlqQPd6p0k286AGBu
+webprotege:RcwieJlqQPd6p0k286AGBu rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                  rdfs:label "Bench"@en .
+
+
+###  http://webprotege.stanford.edu/Rf96HEgpBh1Mnsi83cmqYA
+webprotege:Rf96HEgpBh1Mnsi83cmqYA rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                  rdfs:label "Microwave"@en .
+
+
+###  http://webprotege.stanford.edu/RfiN8YKmGGdK78G4UdiiVx
+webprotege:RfiN8YKmGGdK78G4UdiiVx rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                  rdfs:label "Textile"@en .
+
+
+###  http://webprotege.stanford.edu/Rfzvdg9kbhngjCSaG52Is0
+webprotege:Rfzvdg9kbhngjCSaG52Is0 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBVqaHlXcJu1WTejQhH7wkj ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                    owl:someValuesFrom webprotege:Rzwn2E399SljTgV6JzTcbl
+                                                  ] ;
+                                  rdfs:label "Papercup"@en .
+
+
+###  http://webprotege.stanford.edu/RhRDzWota6usMOn3w6utws
+webprotege:RhRDzWota6usMOn3w6utws rdf:type owl:Class ;
+                                  rdfs:label "Conceptual Entity"@en .
+
+
+###  http://webprotege.stanford.edu/RmFWOgWLvfQCrl2JD2tqFz
+webprotege:RmFWOgWLvfQCrl2JD2tqFz rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R6aIeFrPbjLN2h34NP0aku ;
+                                  rdfs:label "Person"@en .
+
+
+###  http://webprotege.stanford.edu/RqlvWRWgbaYiZBnD4lLUiZ
+webprotege:RqlvWRWgbaYiZBnD4lLUiZ rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                  rdfs:label "Stop Sign"@en .
+
+
+###  http://webprotege.stanford.edu/Rsylb2P7HBl2uJirbVbpVf
+webprotege:Rsylb2P7HBl2uJirbVbpVf rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RKYeflRbbcFq2No64bx9ZY ;
+                                  rdfs:label "Street Fixtures"@en .
+
+
+###  http://webprotege.stanford.edu/RvYDNqeobt0fsaRhUNUHOy
+webprotege:RvYDNqeobt0fsaRhUNUHOy rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Clothing"@en .
+
+
+###  http://webprotege.stanford.edu/Rw2o712oGbr3OOtX6XXQq3
+webprotege:Rw2o712oGbr3OOtX6XXQq3 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                  rdfs:label "Knife"@en .
+
+
+###  http://webprotege.stanford.edu/RyzuVpXqsiZqnCrzsItXpt
+webprotege:RyzuVpXqsiZqnCrzsItXpt rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                  rdfs:label "Bottle"@en .
+
+
+###  http://webprotege.stanford.edu/Rzt5aQUAcyi1YQ9QpiC8lQ
+webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                  rdfs:label "Container"@en .
+
+
+###  http://webprotege.stanford.edu/Rzwn2E399SljTgV6JzTcbl
+webprotege:Rzwn2E399SljTgV6JzTcbl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                  rdfs:label "Paper"@en .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OrangeColor
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OrangeColor> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherColor
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherColor> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherShape
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherShape> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl .
+
+
+###  http://www.w3.org/ns/sosa/#Actuator
+<http://www.w3.org/ns/sosa/#Actuator> rdf:type owl:Class .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#OrganicThrash
+thijs2:OrganicThrash rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                           owl:someValuesFrom webprotege:RCg0thBzVa7RqR06evY8n7x
+                                         ] ;
+                     rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#PaperThrash
+thijs2:PaperThrash rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                         owl:someValuesFrom webprotege:Rzwn2E399SljTgV6JzTcbl
+                                       ] ;
+                   rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#PlasticThrash
+thijs2:PlasticThrash rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                           owl:someValuesFrom webprotege:RC2JmhbMLDrKtZIji1hgBRt
+                                         ] ;
+                     rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#Thrash
+thijs2:Thrash rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.com/locobot#pan
+<http://example.com/locobot#pan> rdf:type owl:NamedIndividual ,
+                                          <http://www.w3.org/ns/sosa/#Actuator> ;
+                                 <http://example.com/locobot#hasJointValue> "-0.1830753"^^xsd:double ,
+                                                                            "-0.3162287"^^xsd:double ,
+                                                                            "-0.3437666"^^xsd:double ,
+                                                                            "-0.8165972"^^xsd:double ,
+                                                                            "-0.8435392"^^xsd:double ,
+                                                                            "-1.48388"^^xsd:double ,
+                                                                            "-1.517294"^^xsd:double ,
+                                                                            "0.4165709"^^xsd:double ,
+                                                                            "0.4438236"^^xsd:double ,
+                                                                            "0.943591"^^xsd:double ,
+                                                                            "1.016339"^^xsd:double ,
+                                                                            "1.443217"^^xsd:double ,
+                                                                            "1.557272"^^xsd:double ,
+                                                                            "1.557539"^^xsd:double .
+
+
+###  http://example.com/object#Chair11
+<http://example.com/object#Chair11> rdf:type owl:NamedIndividual ,
+                                             webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                    <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-38-606679" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.11148497697596278
+y: 0.10052992890274749
+z: -0.7172326550960118
+w: -0.6804720066008617""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.5295831720212325
+y: -1.9165674339840766
+z: 0.22983585730213663""" .
+
+
+###  http://example.com/object#Chair200
+<http://example.com/object#Chair200> rdf:type owl:NamedIndividual ,
+                                              webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                     <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.15136844009855238
+y: 0.026904812684003968
+z: -0.9705582759094771
+w: -0.18541941500337247""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.7538465263514276
+y: 1.5151946203909397
+z: 0.29994648084739717""" .
+
+
+###  http://example.com/object#Chair67
+<http://example.com/object#Chair67> rdf:type owl:NamedIndividual ,
+                                             webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                    <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.1359413882051379
+y: 0.06832995517887878
+z: -0.8726189699201976
+w: -0.46409814644482866""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.114149230261303
+y: -0.3289267348634144
+z: 0.41248059615921473""" .
+
+
+###  http://example.com/object#Chair754
+<http://example.com/object#Chair754> rdf:type owl:NamedIndividual ,
+                                              webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                     <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.150971973736273
+y: 0.02887810403135635
+z: -0.96792578514891
+w: -0.19872894277783054""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.793253001740322
+y: 1.4379489256753843
+z: 0.3123298516852093""" .
+
+
+###  http://example.com/object#Chair865
+<http://example.com/object#Chair865> rdf:type owl:NamedIndividual ,
+                                              webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                     <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.13845556114920837
+y: 0.06354711052968923
+z: -0.8888141408501781
+w: -0.4322050964009394""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.1281167751935692
+y: -0.09903644373999354
+z: 0.416525207395391""" .
+
+
+###  http://example.com/object#Chair930
+<http://example.com/object#Chair930> rdf:type owl:NamedIndividual ,
+                                              webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                     <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-49-592497" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.11735645212759224
+y: 0.09434122546732725
+z: -0.7544459657764586
+w: -0.6388571679530362""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.718596687751556
+y: -1.616375891549433
+z: 0.2890037586894252""" .
+
+
+###  http://example.com/object#Chair966
+<http://example.com/object#Chair966> rdf:type owl:NamedIndividual ,
+                                              webprotege:RBiBEwV6E98jD03X6r6lHkx ;
+                                     <http://example.com/locobot#hasSize> """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-50-549730" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.11148731299030129
+y: 0.10055887572440017
+z: -0.7172146633290372
+w: -0.6804863101202429""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.529709267146453
+y: -1.9171765289555218
+z: 0.2299364696891782""" .
+
+
+###  http://example.com/object#Suitcase1344
+<http://example.com/object#Suitcase1344> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.016867515013370686
+y: -0.15335285081186895
+z: 0.1095356364411823
+w: 0.981937031807321""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9652506596717273
+y: -0.6827777655525696
+z: -0.2642935348340087""" .
+
+
+###  http://example.com/object#Suitcase1376
+<http://example.com/object#Suitcase1376> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.028530435067255826
+y: -0.15151927835537482
+z: 0.18811293649418942
+w: 0.9699698168938417""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.0555948876218806
+y: -0.5271577750748916
+z: -0.23613991619396388""" .
+
+
+###  http://example.com/object#Suitcase1433
+<http://example.com/object#Suitcase1433> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-42-507321" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06321330016792004
+y: -0.13969536899487425
+z: 0.42245690133597225
+w: 0.8933193432792524""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.170475805075135
+y: 0.020909117047207992
+z: -0.20039360068860768""" .
+
+
+###  http://example.com/object#Suitcase1461
+<http://example.com/object#Suitcase1461> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-43-545708" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.10172466090811115
+y: -0.1120542645351532
+z: 0.6824094565378319
+w: 0.7151316443777024""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9342571365270587
+y: 0.6904957522041679
+z: -0.27396368531527837""" .
+
+
+###  http://example.com/object#Suitcase1485
+<http://example.com/object#Suitcase1485> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-44-541461" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.10344415202488601
+y: -0.11033224069151737
+z: 0.6940320230062262
+w: 0.7038790060214373""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9116947512803354
+y: 0.7191458306830623
+z: -0.2809312734377207""" .
+
+
+###  http://example.com/object#Suitcase1516
+<http://example.com/object#Suitcase1516> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-45-702862" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06144639445949897
+y: -0.1406240462231573
+z: 0.4100554581601111
+w: 0.8990571391546016""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1711127369528125
+y: -0.010282298870077533
+z: -0.20003879755735432""" .
+
+
+###  http://example.com/object#Suitcase1576
+<http://example.com/object#Suitcase1576> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RDOzhT58MS0B4lnwhk3KYLe ;
+                                         <http://example.com/locobot#hasSize> """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.026500012404843627
+y: -0.15195082316874392
+z: 0.1743772626817084
+w: 0.9725231446811529""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.041631508729801
+y: -0.5554069704455439
+z: -0.2404106073156558""" .
+
+
+###  http://example.com/object#beer201
+<http://example.com/object#beer201> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7SLrXciGGIROd3MAcPHSEF ;
+                                    <http://example.com/locobot#hasSize> """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.026966016868236964
+y: -0.15134027447512569
+z: -0.18577490342009909
+w: 0.9704929883905955""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.6867021404092597
+y: 0.20869039222636548
+z: -0.03497092146538441""" .
+
+
+###  http://example.com/object#beer345
+<http://example.com/object#beer345> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7SLrXciGGIROd3MAcPHSEF ;
+                                    <http://example.com/locobot#hasSize> """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.01687503448252892
+y: -0.1533395650944462
+z: 0.1095939885114377
+w: 0.9819324664507303""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2854619805489467
+y: 1.115259202388756
+z: -0.15995203657179086""" .
+
+
+###  http://example.com/object#beer68
+<http://example.com/object#beer68> rdf:type owl:NamedIndividual ,
+                                            webprotege:R7SLrXciGGIROd3MAcPHSEF ;
+                                   <http://example.com/locobot#hasSize> """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+                                   <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                   <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06839064546686854
+y: -0.13590049117817254
+z: -0.46441689348321824
+w: 0.8724509872523235""" ;
+                                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.5294261736483175
+y: -0.7763680931202249
+z: -0.08387529409719295""" .
+
+
+###  http://example.com/object#beer755
+<http://example.com/object#beer755> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7SLrXciGGIROd3MAcPHSEF ;
+                                    <http://example.com/locobot#hasSize> """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.02893941297011023
+y: -0.15094316259362958
+z: -0.1990834266570383
+w: 0.9678555993915983""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.6923071832247765
+y: 0.16261393735475832
+z: -0.033153979036433426""" .
+
+
+###  http://example.com/object#beer866
+<http://example.com/object#beer866> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7SLrXciGGIROd3MAcPHSEF ;
+                                    <http://example.com/locobot#hasSize> """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06360814510141949
+y: -0.13841604058721746
+z: -0.43252987831717415
+w: 0.8886579251589699""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.578369110222241
+y: -0.6653565584150183
+z: -0.06874153127738968""" .
+
+
+###  http://example.com/object#bowl195
+<http://example.com/object#bowl195> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.02667490816893626
+y: -0.1513905287005646
+z: -0.18408752627170816
+w: 0.9708146783836273""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.776194795018961
+y: -0.1955473774224863
+z: 0.31407498258377886""" .
+
+
+###  http://example.com/object#bowl340
+<http://example.com/object#bowl340> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.017167008067712933
+y: -0.1533243468195438
+z: 0.11131726656363924
+w: 0.9817359139153273""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.402103257014883
+y: 1.4274723471838628
+z: 0.19764009865752327""" .
+
+
+###  http://example.com/object#bowl372
+<http://example.com/object#bowl372> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.028827417187814036
+y: -0.1514719325581788
+z: 0.18987567082217102
+w: 0.9696249085575313""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.151433693314237
+y: 1.797454860465692
+z: 0.11938419324115587""" .
+
+
+###  http://example.com/object#bowl572
+<http://example.com/object#bowl572> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.02680317802074329
+y: -0.15190668747089117
+z: 0.17618244669189695
+w: 0.9721963245287786""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.199679392346572
+y: 1.7357411687520305
+z: 0.13463529032757374""" .
+
+
+###  http://example.com/object#bowl64
+<http://example.com/object#bowl64> rdf:type owl:NamedIndividual ,
+                                            webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                   <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                   <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                   <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06812503333878077
+y: -0.13601789575738407
+z: -0.46290859403013335
+w: 0.8732546853234563""" ;
+                                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.210603738356835
+y: -1.7556642789582217
+z: 0.1379587842663545""" .
+
+
+###  http://example.com/object#bowl749
+<http://example.com/object#bowl749> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.02863763558580185
+y: -0.1510023923459327
+z: -0.19733746683279732
+w: 0.968212831725481""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.770793114039726
+y: -0.27285110921756867
+z: 0.3125087410837818""" .
+
+
+###  http://example.com/object#bowl862
+<http://example.com/object#bowl862> rdf:type owl:NamedIndividual ,
+                                             webprotege:RYBCJyskVFeot1Wc1NL4Xl ;
+                                    <http://example.com/locobot#hasSize> """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06336163274512742
+y: -0.13854931454669359
+z: -0.4309128325167097
+w: 0.8894400045573277""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.3253530192437517
+y: -1.5903088915633037
+z: 0.17358800691207263""" .
+
+
+###  http://example.com/object#cafe194
+<http://example.com/object#cafe194> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.026969852538862717
+y: -0.15134995720637187
+z: -0.18583310633497377
+w: 0.9704802285969332""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.024515484413348
+y: -2.586392226627351
+z: 0.20384034655643263""" .
+
+
+###  http://example.com/object#cafe339
+<http://example.com/object#cafe339> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.016867515013370686
+y: -0.15335285081186895
+z: 0.1095356364411823
+w: 0.981937031807321""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.9050074562863717
+y: -0.43057688372342323
+z: 0.47851057530513624""" .
+
+
+###  http://example.com/object#cafe371
+<http://example.com/object#cafe371> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.028530435067255826
+y: -0.15151927835537482
+z: 0.18811293649418942
+w: 0.9699698168938417""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.919568825681103
+y: 0.20639571805906265
+z: 0.48294687196552305""" .
+
+
+###  http://example.com/object#cafe432
+<http://example.com/object#cafe432> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-42-507321" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06321330016792004
+y: -0.13969536899487425
+z: 0.42245690133597225
+w: 0.8933193432792524""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.3544366110772783
+y: 2.0777610831594564
+z: 0.30676361499864474""" .
+
+
+###  http://example.com/object#cafe460
+<http://example.com/object#cafe460> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-43-545708" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.10172466090811115
+y: -0.1120542645351532
+z: 0.6824094565378319
+w: 0.7151316443777024""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.5226984195426525
+y: 3.675654810083006
+z: -0.2641907797145406""" .
+
+
+###  http://example.com/object#cafe484
+<http://example.com/object#cafe484> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-44-541461" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.10344415202488601
+y: -0.11033224069151737
+z: 0.6940320230062262
+w: 0.7038790060214373""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.4065873578771746
+y: 3.7211857553707386
+z: -0.30018880687259786""" .
+
+
+###  http://example.com/object#cafe514
+<http://example.com/object#cafe514> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-45-702862" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06144639445949897
+y: -0.1406240462231573
+z: 0.4100554581601111
+w: 0.8990571391546016""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.4084737170754593
+y: 1.9840237956737363
+z: 0.3238813299115511""" .
+
+
+###  http://example.com/object#cafe571
+<http://example.com/object#cafe571> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.026500012404843627
+y: -0.15195082316874392
+z: 0.1743772626817084
+w: 0.9725231446811529""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 3.924202211536472
+y: 0.09458185743569159
+z: 0.48473346183697225""" .
+
+
+###  http://example.com/object#cafe63
+<http://example.com/object#cafe63> rdf:type owl:NamedIndividual ,
+                                            webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                   <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                   <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                   <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06839046069191455
+y: -0.13590570791513173
+z: -0.46446975353769276
+w: 0.872422048948254""" ;
+                                   <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1368719088802983
+y: -3.8447314450286867
+z: -0.38439101951809707""" .
+
+
+###  http://example.com/object#cafe748
+<http://example.com/object#cafe748> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.028943070735233667
+y: -0.15095265724469734
+z: -0.1991414963562814
+w: 0.9678420627127969""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.956422058289287
+y: -2.668400772704687
+z: 0.18278931309233076""" .
+
+
+###  http://example.com/object#cafe861
+<http://example.com/object#cafe861> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06360845003969727
+y: -0.13842183165318941
+z: -0.43258364660986726
+w: 0.8886308290235226""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.3986783818484338
+y: -3.7592566521354165
+z: -0.3027408123898332""" .
+
+
+###  http://example.com/object#cafe9
+<http://example.com/object#cafe9> rdf:type owl:NamedIndividual ,
+                                           webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                  <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                  <http://example.com/locobot#seenAt> "2023-06-15-12-28-38-606679" ;
+                                  <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.10058165918409126
+y: -0.11143648949334085
+z: -0.6807771016589711
+w: 0.7169433565505624""" ;
+                                  <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: -0.8857801641103393
+y: -3.837738805923248
+z: -1.0151165833114397""" .
+
+
+###  http://example.com/object#cafe928
+<http://example.com/object#cafe928> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-49-592497" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.0943951353183488
+y: -0.11731037421311698
+z: -0.6391781802526856
+w: 0.7541744416373938""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: -0.46785555330960205
+y: -3.9346219475112427
+z: -0.884780751769781""" .
+
+
+###  http://example.com/object#cafe964
+<http://example.com/object#cafe964> rdf:type owl:NamedIndividual ,
+                                             webprotege:R7i58zpys5WbCYiqXQutJ7 ;
+                                    <http://example.com/locobot#hasSize> """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-50-549730" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.10061060711470501
+y: -0.11143881328186345
+z: -0.6807913973044307
+w: 0.7169253587275465""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: -0.8856743918460552
+y: -3.838158420283677
+z: -1.0152525812650788""" .
+
+
+###  http://example.com/object#coke_can10
+<http://example.com/object#coke_can10> rdf:type owl:NamedIndividual ,
+                                                webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                       <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                       <http://example.com/locobot#seenAt> "2023-06-15-12-28-38-606679" ;
+                                       <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.621611661793317
+y: -0.5075723910386493
+z: 0.45920603702387885
+w: 0.38091865974074224""" ;
+                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9671065379624019
+y: -0.8188693306324115
+z: -0.23132312236654237""" .
+
+
+###  http://example.com/object#coke_can196
+<http://example.com/object#coke_can196> rdf:type owl:NamedIndividual ,
+                                                 webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                        <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                        <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                        <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.32298970403016025
+y: -0.6738450042001738
+z: 0.6643508815413506
+w: -0.01576285507792488""" ;
+                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1450169517793367
+y: 0.4932927700825358
+z: -0.17579081107868022""" .
+
+
+###  http://example.com/object#coke_can65
+<http://example.com/object#coke_can65> rdf:type owl:NamedIndividual ,
+                                                webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                       <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                       <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                       <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.49998126557400263
+y: -0.6111078231119547
+z: 0.5799307673482236
+w: 0.20061472450766754""" ;
+                                       <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2341777280296025
+y: -0.2259327344679447
+z: -0.14791332715717032""" .
+
+
+###  http://example.com/object#coke_can750
+<http://example.com/object#coke_can750> rdf:type owl:NamedIndividual ,
+                                                 webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                        <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                        <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                        <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.3318627742342022
+y: -0.6722579537344624
+z: 0.661742527807716
+w: -0.005759306293860289""" ;
+                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1582826841392357
+y: 0.46244354251428854
+z: -0.17161567272620454""" .
+
+
+###  http://example.com/object#coke_can863
+<http://example.com/object#coke_can863> rdf:type owl:NamedIndividual ,
+                                                 webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                        <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                        <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                        <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.4806910695458744
+y: -0.6217068058674372
+z: 0.5930908723754864
+w: 0.17509985808628362""" ;
+                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2458831487428985
+y: -0.13811473446748634
+z: -0.14437712390916313""" .
+
+
+###  http://example.com/object#coke_can929
+<http://example.com/object#coke_can929> rdf:type owl:NamedIndividual ,
+                                                 webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                        <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                        <http://example.com/locobot#seenAt> "2023-06-15-12-28-49-592497" ;
+                                        <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.5996883037944191
+y: -0.5325534618648075
+z: 0.48751442261309225
+w: 0.34509482217530446""" ;
+                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.0479432932763948
+y: -0.7092929320100589
+z: -0.20603129325399266""" .
+
+
+###  http://example.com/object#coke_can965
+<http://example.com/object#coke_can965> rdf:type owl:NamedIndividual ,
+                                                 webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                        <http://example.com/locobot#hasSize> """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+                                        <http://example.com/locobot#seenAt> "2023-06-15-12-28-50-549730" ;
+                                        <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6216230398720327
+y: -0.5075789877437762
+z: 0.45917350784577965
+w: 0.38093051491559277""" ;
+                                        <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9672957027267883
+y: -0.8193966383252325
+z: -0.23124150903042384""" .
+
+
+###  http://example.com/object#coke_can_0197
+<http://example.com/object#coke_can_0197> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6469982215098965
+y: -0.20253563892660298
+z: -0.3990435724521867
+w: 0.6173628135968509""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.023970912914041
+y: -0.010472945559801772
+z: -0.21150619813013574""" .
+
+
+###  http://example.com/object#coke_can_0341
+<http://example.com/object#coke_can_0341> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.615248699200225
+y: -0.4111095067457366
+z: -0.18928496141724094
+w: 0.6454682137619032""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.8550968432583428
+y: 0.5475002619917917
+z: -0.2640941828822515""" .
+
+
+###  http://example.com/object#coke_can_0373
+<http://example.com/object#coke_can_0373> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.5971835128451404
+y: -0.46145701383560944
+z: -0.12936348929740366
+w: 0.6431907679721941""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7587428339155193
+y: 0.6704357647130498
+z: -0.2941614616627174""" .
+
+
+###  http://example.com/object#coke_can_0573
+<http://example.com/object#coke_can_0573> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6006362120349329
+y: -0.45284168523143514
+z: -0.13998823008153333
+w: 0.6438740904460444""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7771907721945162
+y: 0.6502011165945384
+z: -0.2883497916465205""" .
+
+
+###  http://example.com/object#coke_can_066
+<http://example.com/object#coke_can_066> rdf:type owl:NamedIndividual ,
+                                                  webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                         <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6209735772833658
+y: 0.023966125734286692
+z: -0.5731315347341519
+w: 0.5341700899774003""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.8627512431629537
+y: -0.5706125497546465
+z: -0.2616930262575838""" .
+
+
+###  http://example.com/object#coke_can_0751
+<http://example.com/object#coke_can_0751> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6470660408733218
+y: -0.19243070970604356
+z: -0.40793034647844073
+w: 0.6147103327035691""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.024089781714395
+y: -0.037671402964168516
+z: -0.21142691362281096""" .
+
+
+###  http://example.com/object#coke_can_0864
+<http://example.com/object#coke_can_0864> rdf:type owl:NamedIndividual ,
+                                                   webprotege:R8KuHKp8ZnpTz0JgGwYAFmf ;
+                                          <http://example.com/locobot#hasSize> """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.6271820266709426
+y: -0.0036425995011045154
+z: -0.5545430117714578
+w: 0.5469108565253067""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.8992005604916353
+y: -0.5099747499699514
+z: -0.25039099341576165""" .
+
+
+###  http://example.com/object#lemon204
+<http://example.com/object#lemon204> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06058799847960472
+y: 0.05929899588227272
+z: 0.05301699787378311""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06419409505200387
+y: 0.18342938356307384
+z: 0.5591700576519928
+w: 0.8059538609818754""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.773712842275439
+y: -0.1517608795192965
+z: 0.3414559201535632""" .
+
+
+###  http://example.com/object#lemon348
+<http://example.com/object#lemon348> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06058799847960472
+y: 0.05929899960756302
+z: 0.05301699973642826""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06136420411681777
+y: 0.24262553098356246
+z: 0.745380866909237
+w: 0.6178791543770418""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.375055851446789
+y: 1.4668960796432733
+z: 0.21734458988207078""" .
+
+
+###  http://example.com/object#lemon379
+<http://example.com/object#lemon379> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06058799475431442
+y: 0.05929899588227272
+z: 0.05301699973642826""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.09448896511279319
+y: 0.2548929954071234
+z: 0.7845806710723382
+w: 0.5572562847954045""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.1186065352211534
+y: 1.8331679250868582
+z: 0.1373056378665905""" .
+
+
+###  http://example.com/object#lemon579
+<http://example.com/object#lemon579> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.060587991029024124
+y: 0.05929899960756302
+z: 0.05301699787378311""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.08884558653975759
+y: 0.25294338895417334
+z: 0.7781544727059015
+w: 0.5679803872886673""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.167821056737184
+y: 1.7722091153870088
+z: 0.15284774977616994""" .
+
+
+###  http://example.com/object#lemon70
+<http://example.com/object#lemon70> rdf:type owl:NamedIndividual ,
+                                             webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06058800593018532
+y: 0.05929899960756302
+z: 0.05301699973642826""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.18379545393881672
+y: 0.10783893089048997
+z: 0.3231017270083556
+w: 0.9220603397283924""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.230728324995357
+y: -1.722786867324463
+z: 0.17239775061345758""" .
+
+
+###  http://example.com/object#lemon758
+<http://example.com/object#lemon758> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06058799847960472
+y: 0.05929899960756302
+z: 0.05301700159907341""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06978369330621276
+y: 0.18078513972517188
+z: 0.5494887741046273
+w: 0.8127170827145745""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.769490511502521
+y: -0.22914642800656193
+z: 0.34025659073892""" .
+
+
+###  http://example.com/object#lemon868
+<http://example.com/object#lemon868> rdf:type owl:NamedIndividual ,
+                                              webprotege:R8FID7iAbg9ls9YrhhvgFPm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06058799475431442
+y: 0.05929899588227272
+z: 0.053016990423202515""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.17012790435828853
+y: 0.11829625425876616
+z: 0.35389604143907466
+w: 0.9120417118974083""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.3432450605719826
+y: -1.5553045923572693
+z: 0.2072880935613725""" .
+
+
+###  http://example.com/object#milk198
+<http://example.com/object#milk198> rdf:type owl:NamedIndividual ,
+                                             webprotege:RCqiOdkGeKd3LqEKIXsYnZh ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.026969852538862717
+y: -0.15134995720637187
+z: -0.18583310633497377
+w: 0.9704802285969332""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2382058402088947
+y: -0.36625093999168534
+z: -0.1745206939893552""" .
+
+
+###  http://example.com/object#milk342
+<http://example.com/object#milk342> rdf:type owl:NamedIndividual ,
+                                             webprotege:RCqiOdkGeKd3LqEKIXsYnZh ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.016867515013370686
+y: -0.15335285081186895
+z: 0.1095356364411823
+w: 0.981937031807321""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2251581951947295
+y: 0.37552994642704784
+z: -0.17851778847860386""" .
+
+
+###  http://example.com/object#milk374
+<http://example.com/object#milk374> rdf:type owl:NamedIndividual ,
+                                             webprotege:RCqiOdkGeKd3LqEKIXsYnZh ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.028530435067255826
+y: -0.15151927835537482
+z: 0.18811293649418942
+w: 0.9699698168938417""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1504223291255564
+y: 0.56130758024537
+z: -0.20185368680950724""" .
+
+
+###  http://example.com/object#milk574
+<http://example.com/object#milk574> rdf:type owl:NamedIndividual ,
+                                             webprotege:RCqiOdkGeKd3LqEKIXsYnZh ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.026500012404843627
+y: -0.15195082316874392
+z: 0.1743772626817084
+w: 0.9725231446811529""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1657671556293359
+y: 0.5297788621898216
+z: -0.1969748071466382""" .
+
+
+###  http://example.com/object#milk752
+<http://example.com/object#milk752> rdf:type owl:NamedIndividual ,
+                                             webprotege:RCqiOdkGeKd3LqEKIXsYnZh ;
+                                    <http://example.com/locobot#hasSize> """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.028943070735233667
+y: -0.15095265724469734
+z: -0.1991414963562814
+w: 0.9678420627127969""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.2289277819168167
+y: -0.399227798140526
+z: -0.1773552290195697""" .
+
+
+###  http://example.com/object#orange202
+<http://example.com/object#orange202> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.16880400992128616
+y: 0.16336260727922314
+z: -0.9215788388183717
+w: 0.3090474213120223""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.8694836833464732
+y: -0.06843370697819746
+z: -0.295989697285984""" .
+
+
+###  http://example.com/object#orange346
+<http://example.com/object#orange346> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.0880370225258849
+y: 0.12264421353359829
+z: -0.8076106458868985
+w: 0.5700639650088827""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7606318201997818
+y: 0.40220017671974073
+z: -0.3298776172085245""" .
+
+
+###  http://example.com/object#orange377
+<http://example.com/object#orange377> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.0647142013530546
+y: 0.1096977926565201
+z: -0.7642412263523941
+w: 0.6322292419470267""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.6878296303901552
+y: 0.5094394195889353
+z: -0.3525969818172097""" .
+
+
+###  http://example.com/object#orange577
+<http://example.com/object#orange577> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.06887701740581595
+y: 0.11200134692780583
+z: -0.7722257437340238
+w: 0.6215939635116079""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7019737333559488
+y: 0.49167245321239006
+z: -0.34813503688232905""" .
+
+
+###  http://example.com/object#orange69
+<http://example.com/object#orange69> rdf:type owl:NamedIndividual ,
+                                              webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                     <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.2345273924832933
+y: 0.18946328895849435
+z: -0.9532451849981813
+w: 0.020595669200114294""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7057926998486042
+y: -0.5210472091355367
+z: -0.34696030182815535""" .
+
+
+###  http://example.com/object#orange756
+<http://example.com/object#orange756> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.1722065058668639
+y: 0.16488454819325965
+z: -0.9248703761230869
+w: 0.2962647337672345""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.8681501861419338
+y: -0.09087596111107464
+z: -0.29637003057979877""" .
+
+
+###  http://example.com/object#orange867
+<http://example.com/object#orange867> rdf:type owl:NamedIndividual ,
+                                               webprotege:RTD5wnz7hmZr2AuzOLadgm ;
+                                      <http://example.com/locobot#hasSize> """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+                                      <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                      <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.22756481970934922
+y: 0.18715880097254
+z: -0.9539645972308525
+w: 0.05601234934681763""" ;
+                                      <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7392512082499317
+y: -0.4732076069995944
+z: -0.33657450406910855""" .
+
+
+###  http://example.com/object#peach203
+<http://example.com/object#peach203> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.062123000621795654
+y: 0.0626320019364357
+z: 0.05864500254392624""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.0026413222253652553
+y: 0.1045062693410874
+z: 0.3266317625503937
+w: 0.9393525189078556""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9262859294190995
+y: -0.4650719219878698
+z: -0.27889321172147546""" .
+
+
+###  http://example.com/object#peach347
+<http://example.com/object#peach347> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.062122996896505356
+y: 0.0626319944858551
+z: 0.05864499509334564""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.11476114734475612
+y: 0.12776972207276202
+z: 0.5682590089976277
+w: 0.8047275786715641""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.0213386925473098
+y: 0.10831671378325339
+z: -0.249212951480349""" .
+
+
+###  http://example.com/object#peach378
+<http://example.com/object#peach378> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06212300807237625
+y: 0.0626320093870163
+z: 0.058645009994506836""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.14369476834447092
+y: 0.13224299653292035
+z: 0.6250901507561317
+w: 0.7557287256986461""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.99008891111958
+y: 0.2630268232457841
+z: -0.2589789170952613""" .
+
+
+###  http://example.com/object#peach434
+<http://example.com/object#peach434> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06212300434708595
+y: 0.0626320019364357
+z: 0.05864500254392624""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-42-507321" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.225975616898274
+y: 0.14012246451196747
+z: 0.7745980397734569
+w: 0.5738454428551778""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7514884351166133
+y: 0.6812049397722406
+z: -0.33335138796263464""" .
+
+
+###  http://example.com/object#peach517
+<http://example.com/object#peach517> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.062123000621795654
+y: 0.0626320019364357
+z: 0.05864500254392624""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-45-702862" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.22221646048235033
+y: 0.13999340745415004
+z: 0.7682344403887151
+w: 0.5838129282233393""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.7697403529478698
+y: 0.6619436169117752
+z: -0.3276181216697681""" .
+
+
+###  http://example.com/object#peach578
+<http://example.com/object#peach578> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.0621230099350214
+y: 0.0626320019364357
+z: 0.058645011857151985""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.1392156639471283
+y: 0.13154648587614148
+z: 0.6167728467946844
+w: 0.7634826628170276""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9975115347551798
+y: 0.23646942542570143
+z: -0.2565875391630996""" .
+
+
+###  http://example.com/object#peach757
+<http://example.com/object#peach757> rdf:type owl:NamedIndividual ,
+                                              webprotege:RCm0VvmOS61XrrymfdVDCAz ;
+                                     <http://example.com/locobot#hasSize> """x: 0.06212300807237625
+y: 0.0626320093870163
+z: 0.058645009994506836""" ;
+                                     <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                     <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.0014174524206781861
+y: 0.10345067378494899
+z: 0.31739341668419535
+w: 0.9426332096672639""" ;
+                                     <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 0.9146465279858046
+y: -0.4889961658897659
+z: -0.28247697080794504""" .
+
+
+###  http://example.com/object#salt199
+<http://example.com/object#salt199> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.026969852538862717
+y: -0.15134995720637187
+z: -0.18583310633497377
+w: 0.9704802285969332""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.4041619244892254
+y: -0.686922539555253
+z: -0.11849499142631104""" .
+
+
+###  http://example.com/object#salt343
+<http://example.com/object#salt343> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.016867515013370686
+y: -0.15335285081186895
+z: 0.1095356364411823
+w: 0.981937031807321""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.5347568615356408
+y: 0.20971254109783474
+z: -0.0777019667351082""" .
+
+
+###  http://example.com/object#salt375
+<http://example.com/object#salt375> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.028530435067255826
+y: -0.15151927835537482
+z: 0.18811293649418942
+w: 0.9699698168938417""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.4813539511047236
+y: 0.4497403653644208
+z: -0.09439395406302295""" .
+
+
+###  http://example.com/object#salt515
+<http://example.com/object#salt515> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-45-702862" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.06144639445949897
+y: -0.1406240462231573
+z: 0.4100554581601111
+w: 0.8990571391546016""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.1257781530763227
+y: 1.0637806542316617
+z: -0.20515963646486252""" .
+
+
+###  http://example.com/object#salt575
+<http://example.com/object#salt575> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: -0.026500012404843627
+y: -0.15195082316874392
+z: 0.1743772626817084
+w: 0.9725231446811529""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.493549008686933
+y: 0.4084292124288539
+z: -0.0904670828585912""" .
+
+
+###  http://example.com/object#salt753
+<http://example.com/object#salt753> rdf:type owl:NamedIndividual ,
+                                             webprotege:RDJ4KJaH609bVd5TR720CML ;
+                                    <http://example.com/locobot#hasSize> """x: 0.061000000685453415
+y: 0.04600000008940697
+z: 0.14399999380111694""" ;
+                                    <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                    <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.028943070735233667
+y: -0.15095265724469734
+z: -0.1991414963562814
+w: 0.9678420627127969""" ;
+                                    <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 1.3864200946717848
+y: -0.724581677354764
+z: -0.12395484767881344""" .
+
+
+###  http://example.com/object#strawberry205
+<http://example.com/object#strawberry205> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522399976849556
+y: 0.04528600350022316
+z: 0.045675003901124""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-40-473510" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.37025276256595496
+y: -0.156363838424292
+z: -0.22759425475746686
+w: 0.8869408644587834""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.7225151254438242
+y: -0.20049073768802733
+z: 0.33088228571888595""" .
+
+
+###  http://example.com/object#strawberry349
+<http://example.com/object#strawberry349> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522399976849556
+y: 0.04528599604964256
+z: 0.04567499831318855""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-456982" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.3193658058349471
+y: -0.0655225537621787
+z: 0.046506026996842226
+w: 0.9442189716717443""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.3588036181926633
+y: 1.3972708779074203
+z: 0.2176737380850311""" .
+
+
+###  http://example.com/object#strawberry380
+<http://example.com/object#strawberry380> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522399976849556
+y: 0.04528599604964256
+z: 0.04567499831318855""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-41-717198" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.3003577333175688
+y: -0.03813510270200366
+z: 0.11948828099412007
+w: 0.9455440215470194""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.113176178623485
+y: 1.7619758605304914
+z: 0.14099420631153559""" .
+
+
+###  http://example.com/object#strawberry580
+<http://example.com/object#strawberry580> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522399604320526
+y: 0.04528599604964256
+z: 0.045674994587898254""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-46-518670" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.3037296942332032
+y: -0.04480016278170461
+z: 0.10719375972934518
+w: 0.9456483046729504""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.160495903523377
+y: 1.7011190710995479
+z: 0.15595095065632805""" .
+
+
+###  http://example.com/object#strawberry71
+<http://example.com/object#strawberry71> rdf:type owl:NamedIndividual ,
+                                                  webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                         <http://example.com/locobot#hasSize> """x: 0.04522400349378586
+y: 0.04528599977493286
+z: 0.045674996450543404""" ;
+                                         <http://example.com/locobot#seenAt> "2023-06-15-12-28-39-489949" ;
+                                         <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.38768299332380235
+y: -0.23458551008890938
+z: -0.4807810219963656
+w: 0.7506804540095294""" ;
+                                         <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.161966621219109
+y: -1.73364716374682
+z: 0.15633086220656292""" .
+
+
+###  http://example.com/object#strawberry759
+<http://example.com/object#strawberry759> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522400349378586
+y: 0.04528600350022316
+z: 0.04567500948905945""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-47-779325" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.3731418761831722
+y: -0.15965957538896589
+z: -0.24050582057467196
+w: 0.8817204264928997""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.716995777941124
+y: -0.2765473544421171
+z: 0.32927177910978594""" .
+
+
+###  http://example.com/object#strawberry869
+<http://example.com/object#strawberry869> rdf:type owl:NamedIndividual ,
+                                                   webprotege:RFNniCGnYdZKUjzIQVRMS4 ;
+                                          <http://example.com/locobot#hasSize> """x: 0.04522399604320526
+y: 0.04528599977493286
+z: 0.045674994587898254""" ;
+                                          <http://example.com/locobot#seenAt> "2023-06-15-12-28-48-641112" ;
+                                          <http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> """x: 0.3866436197996181
+y: -0.22594077358527417
+z: -0.4537067166221169
+w: 0.7704594041167352""" ;
+                                          <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> """x: 2.2752766409786354
+y: -1.571342998441542
+z: 0.19151024404955178""" .
+
+
+###  http://webprotege.stanford.edu/R7YLgY5qLQdQmRhTvUiiVMz
+webprotege:R7YLgY5qLQdQmRhTvUiiVMz rdf:type owl:NamedIndividual ,
+                                            webprotege:RDCgCRme5DftUt6nmtArNwE ;
+                                   rdfs:label "(255,255,255)"@en .
+
+
+###  http://webprotege.stanford.edu/R7hCe0f1b2cHnqaKCsVL1jd
+webprotege:R7hCe0f1b2cHnqaKCsVL1jd rdf:type owl:NamedIndividual ,
+                                            webprotege:RWWDq0BxYsOMArNf5WgjzM ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                              owl:someValuesFrom webprotege:RBidzG8kOz1dElvXIJ68mdR
+                                            ] ;
+                                   webprotege:R9zxmOr4HnzHJ5fNIPTHHjb webprotege:RCfak4YnVHSIElDMZ1RMlwj ;
+                                   rdfs:label "Mark's_apple"@en .
+
+
+###  http://webprotege.stanford.edu/R8Tl42TrueRrq5cIdBTbClT
+webprotege:R8Tl42TrueRrq5cIdBTbClT rdf:type owl:NamedIndividual ,
+                                            webprotege:RyzuVpXqsiZqnCrzsItXpt ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                              owl:someValuesFrom webprotege:RBWCOYQphFRqHeQsoNjAZOu
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                              owl:someValuesFrom webprotege:RRI4398KdRQkhP1imJvtDl
+                                            ] ,
+                                            [ rdf:type owl:Restriction ;
+                                              owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                              owl:someValuesFrom webprotege:RCVzeJkAP7dMgpAY16zmDnE
+                                            ] ;
+                                   rdfs:label "Bottle-001"@en .
+
+
+###  http://webprotege.stanford.edu/R8go71HYO3C31EvJZvvr1HM
+webprotege:R8go71HYO3C31EvJZvvr1HM rdf:type owl:NamedIndividual ;
+                                   rdfs:label "250"@en .
+
+
+###  http://webprotege.stanford.edu/RCfak4YnVHSIElDMZ1RMlwj
+webprotege:RCfak4YnVHSIElDMZ1RMlwj rdf:type owl:NamedIndividual ,
+                                            webprotege:RZ6QAI6NZ2zB0s9C6ILorY ;
+                                   rdfs:label "FF0000"@en .
+
+
+###  http://webprotege.stanford.edu/RDVuWgY3AXxs1kHnFKcAMZG
+webprotege:RDVuWgY3AXxs1kHnFKcAMZG rdf:type owl:NamedIndividual ;
+                                   rdfs:label "cup-002"@en .
+
+
+###  http://webprotege.stanford.edu/RJLipVDn3bP5s422mNFjAM
+webprotege:RJLipVDn3bP5s422mNFjAM rdf:type owl:NamedIndividual ,
+                                           webprotege:Rfzvdg9kbhngjCSaG52Is0 ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                             owl:someValuesFrom webprotege:RBWCOYQphFRqHeQsoNjAZOu
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                             owl:someValuesFrom webprotege:RDCgCRme5DftUt6nmtArNwE
+                                           ] ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty webprotege:RBtsJxDgY517REN4ZQod3yv ;
+                                             owl:someValuesFrom webprotege:RBVqaHlXcJu1WTejQhH7wkj
+                                           ] ;
+                                  webprotege:R7knXWbfbHX7sLJ18gUXQKL webprotege:R7YLgY5qLQdQmRhTvUiiVMz ;
+                                  webprotege:R9wvot7BtR2dBJcWzjn2zNt webprotege:R8go71HYO3C31EvJZvvr1HM ;
+                                  rdfs:label "cup-001"@en .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/lemon1
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/lemon1> rdf:type owl:NamedIndividual ,
+                                                                             webprotege:R8FID7iAbg9ls9YrhhvgFPm .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#fruitpeel
+thijs2:fruitpeel rdf:type owl:NamedIndividual ,
+                          webprotege:RCg0thBzVa7RqR06evY8n7x .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-38-606679.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-38-606679" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-39-489949.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-39-489949" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-40-473510.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-40-473510" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-41-456982.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-41-456982" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-41-717198.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-41-717198" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-42-507321.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-42-507321" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-43-545708.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-43-545708" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-44-541461.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-44-541461" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-45-702862.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-45-702862" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-46-518670.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-46-518670" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-47-779325.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-47-779325" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-48-641112.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-48-641112" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-49-592497.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-49-592497" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-50-549730.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-50-549730" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

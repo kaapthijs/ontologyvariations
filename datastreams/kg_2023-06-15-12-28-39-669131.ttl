@@ -1,0 +1,141 @@
+@prefix ns1: <http://example.com/locobot#> .
+@prefix ns2: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns3: <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix ns4: <https://www.w3.org/TR/2022/CRD-owl-time-20221115#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:pan a <http://www.w3.org/ns/sosa/#Actuator> ;
+    ns1:hasJointValue 9.1604e-01 .
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-39-669131.jpg> ns4:hasTime "2023-06-15-12-28-39-669131" .
+
+<http://example.com/object#Chair86> a <http://webprotege.stanford.edu/RBiBEwV6E98jD03X6r6lHkx> ;
+    ns1:hasSize """x: 0.5128941535949707
+y: 0.578671395778656
+z: 0.8168668746948242""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.13943125354337615
+y: 0.06172736538491143
+z: -0.8947437242970004
+w: -0.41974078397160025""" ;
+    ns2:hasLocation """x: 3.1287023437180097
+y: -0.009888574923179183
+z: 0.4170480481916717""" .
+
+<http://example.com/object#beer87> a <http://webprotege.stanford.edu/R7SLrXciGGIROd3MAcPHSEF> ;
+    ns1:hasSize """x: 0.10999999940395355
+y: 0.10999999940395355
+z: 0.23000000417232513""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.061788531126402306
+y: -0.13939226045491945
+z: -0.42006777671001094
+w: 0.8945921071172145""" ;
+    ns2:hasLocation """x: 1.5947023624724839
+y: -0.6213111952682862
+z: -0.06350011994632697""" .
+
+<http://example.com/object#bowl82> a <http://webprotege.stanford.edu/RYBCJyskVFeot1Wc1NL4Xl> ;
+    ns1:hasSize """x: 0.19564999639987946
+y: 0.19564999639987946
+z: 0.03491000086069107""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.061551446102080666
+y: -0.13951414398400017
+z: -0.41851451746498364
+w: 0.8953171626760018""" ;
+    ns2:hasLocation """x: 2.3660192661486943
+y: -1.523984328793031
+z: 0.18647176910131794""" .
+
+<http://example.com/object#cafe81> a <http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7> ;
+    ns1:hasSize """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.06178902822248199
+y: -0.1393982681803226
+z: -0.4201218768838784
+w: 0.8945657311697199""" ;
+    ns2:hasLocation """x: 1.4975828287430837
+y: -3.720733069658347
+z: -0.2718605098200415""" .
+
+<http://example.com/object#coke_can83> a <http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf> ;
+    ns1:hasSize """x: 0.06701000034809113
+y: 0.0670200064778328
+z: 0.1263999044895172""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: -0.4731145081238796
+y: -0.6256052486865826
+z: 0.5979167297361067
+w: 0.16515543987461695""" ;
+    ns2:hasLocation """x: 1.2482988748895218
+y: -0.1037626620922037
+z: -0.1434984822468684""" .
+
+<http://example.com/object#coke_can_084> a <http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf> ;
+    ns1:hasSize """x: 0.06701000779867172
+y: 0.0670199990272522
+z: 0.12640000879764557""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: -0.6293088044190319
+y: -0.014325949568123775
+z: -0.5472175580514667
+w: 0.5516503784190219""" ;
+    ns2:hasLocation """x: 0.9116727786774877
+y: -0.48559567371141843
+z: -0.246425889873299""" .
+
+<http://example.com/object#lemon89> a <http://webprotege.stanford.edu/R8FID7iAbg9ls9YrhhvgFPm> ;
+    ns1:hasSize """x: 0.06058799847960472
+y: 0.059299008920788765
+z: 0.05301700532436371""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.16467050188466095
+y: 0.12135865580509093
+z: 0.36520319854874533
+w: 0.9081752728631192""" ;
+    ns2:hasLocation """x: 2.3828675504542973
+y: -1.4883167454504393
+z: 0.21988214236065906""" .
+
+<http://example.com/object#milk85> a <http://webprotege.stanford.edu/RCqiOdkGeKd3LqEKIXsYnZh> ;
+    ns1:hasSize """x: 0.06000034511089325
+y: 0.09500021487474442
+z: 0.20000000298023224""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.06178902822248199
+y: -0.1393982681803226
+z: -0.4201218768838784
+w: 0.8945657311697199""" ;
+    ns2:hasLocation """x: 0.9381393386303604
+y: -0.9011419192200237
+z: -0.26795150158389164""" .
+
+<http://example.com/object#orange88> a <http://webprotege.stanford.edu/RTD5wnz7hmZr2AuzOLadgm> ;
+    ns1:hasSize """x: 0.07215800881385803
+y: 0.07398601062595844
+z: 0.07135200500488281""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.22486575994484959
+y: 0.18621948423199905
+z: -0.9538885609362263
+w: 0.06967285706649944""" ;
+    ns2:hasLocation """x: 0.7508187854290885
+y: -0.4538195913071106
+z: -0.332909929073358""" .
+
+<http://example.com/object#strawberry90> a <http://webprotege.stanford.edu/RFNniCGnYdZKUjzIQVRMS4> ;
+    ns1:hasSize """x: 0.04522399976849556
+y: 0.04528599977493286
+z: 0.04567500203847885""" ;
+    ns1:seenAt "2023-06-15-12-28-39-669131" ;
+    ns3:hasOrientationVector """x: 0.3883258796909031
+y: -0.22115916630052626
+z: -0.44117200506150234
+w: 0.7782408986127344""" ;
+    ns2:hasLocation """x: 2.315466666154514
+y: -1.506168466438076
+z: 0.20425288035463612""" .
+

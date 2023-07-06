@@ -1,0 +1,50 @@
+@prefix ns1: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix ns2: <http://www.ease-crc.org/ont/SOMA.owl#> .
+@prefix ns3: <http://example.com/locobot#> .
+@prefix ns4: <https://www.w3.org/TR/2022/CRD-owl-time-20221115#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns3:pan a <http://www.w3.org/ns/sosa/#Actuator> ;
+    ns3:hasJointValue -8.435392e-01 .
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-42-507321.jpg> ns4:hasTime "2023-06-15-12-28-42-507321" .
+
+<http://example.com/object#Suitcase1433> a <http://webprotege.stanford.edu/RDOzhT58MS0B4lnwhk3KYLe> ;
+    ns3:hasSize """x: 0.294064998626709
+y: 0.4872860014438629
+z: 0.7700870037078857""" ;
+    ns3:seenAt "2023-06-15-12-28-42-507321" ;
+    ns2:hasOrientationVector """x: -0.06321330016792004
+y: -0.13969536899487425
+z: 0.42245690133597225
+w: 0.8933193432792524""" ;
+    ns1:hasLocation """x: 1.170475805075135
+y: 0.020909117047207992
+z: -0.20039360068860768""" .
+
+<http://example.com/object#cafe432> a <http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7> ;
+    ns3:hasSize """x: 10.172730445861816
+y: 24.405006408691406
+z: 2.8667938709259033""" ;
+    ns3:seenAt "2023-06-15-12-28-42-507321" ;
+    ns2:hasOrientationVector """x: -0.06321330016792004
+y: -0.13969536899487425
+z: 0.42245690133597225
+w: 0.8933193432792524""" ;
+    ns1:hasLocation """x: 3.3544366110772783
+y: 2.0777610831594564
+z: 0.30676361499864474""" .
+
+<http://example.com/object#peach434> a <http://webprotege.stanford.edu/RCm0VvmOS61XrrymfdVDCAz> ;
+    ns3:hasSize """x: 0.06212300434708595
+y: 0.0626320019364357
+z: 0.05864500254392624""" ;
+    ns3:seenAt "2023-06-15-12-28-42-507321" ;
+    ns2:hasOrientationVector """x: -0.225975616898274
+y: 0.14012246451196747
+z: 0.7745980397734569
+w: 0.5738454428551778""" ;
+    ns1:hasLocation """x: 0.7514884351166133
+y: 0.6812049397722406
+z: -0.33335138796263464""" .
+

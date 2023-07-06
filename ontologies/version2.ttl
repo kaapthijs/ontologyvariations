@@ -1,0 +1,1115 @@
+@prefix : <http://www.semanticweb.org/thijs/ontologies/laptopontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix thijs: <http://www.semanticweb.org/thijs/ontologies/laptopontology> .
+@prefix thijs2: <urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#> .
+@prefix webprotege: <http://webprotege.stanford.edu/> .
+@base <http://www.semanticweb.org/thijs/ontologies/laptopontology> .
+
+<http://www.semanticweb.org/thijs/ontologies/laptopontology> rdf:type owl:Ontology ;
+                                                              owl:versionIRI <http://www.semanticweb.org/thijs/ontologies/laptopontology/2.0> ;
+                                                              owl:imports <file:/C:/Users/thijs/Desktop/streams/2023-06-15-12-28-38/kg_2023-06-15-12-28-40-567907.ttl> ,
+                                                                          <file:/C:/Users/thijs/Desktop/streams/2023-06-15-12-28-38/kg_2023-06-15-12-28-49-654284.ttl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://example.com/locobot#hasJointValue
+<http://example.com/locobot#hasJointValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.com/locobot#hasSize
+<http://example.com/locobot#hasSize> rdf:type owl:AnnotationProperty .
+
+
+###  http://example.com/locobot#seenAt
+<http://example.com/locobot#seenAt> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector
+<http://www.ease-crc.org/ont/SOMA.owl#hasOrientationVector> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation
+<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#hasLocation> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime
+<https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7knXWbfbHX7sLJ18gUXQKL
+webprotege:R7knXWbfbHX7sLJ18gUXQKL rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasColorValue"@en .
+
+
+###  http://webprotege.stanford.edu/R9NoCBglmnVNPFtbsMOatpR
+webprotege:R9NoCBglmnVNPFtbsMOatpR rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasShape"@en .
+
+
+###  http://webprotege.stanford.edu/R9wvot7BtR2dBJcWzjn2zNt
+webprotege:R9wvot7BtR2dBJcWzjn2zNt rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasWeight"@en .
+
+
+###  http://webprotege.stanford.edu/R9zxmOr4HnzHJ5fNIPTHHjb
+webprotege:R9zxmOr4HnzHJ5fNIPTHHjb rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "hasColor"@en .
+
+
+###  http://webprotege.stanford.edu/RBtsJxDgY517REN4ZQod3yv
+webprotege:RBtsJxDgY517REN4ZQod3yv rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:label "recognizedAs"@en .
+
+
+###  http://webprotege.stanford.edu/RCYrfGBZUimZgN5yyvtszyP
+webprotege:RCYrfGBZUimZgN5yyvtszyP rdf:type owl:ObjectProperty ;
+                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                   rdfs:domain webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:range webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "madeOf"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R0Ai8EBlqGqqFjBQ6wef19
+webprotege:R0Ai8EBlqGqqFjBQ6wef19 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                  rdfs:label "Skis"@en .
+
+
+###  http://webprotege.stanford.edu/R6aIeFrPbjLN2h34NP0aku
+webprotege:R6aIeFrPbjLN2h34NP0aku rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8KX3gIN91RhyIRrBvIyAS8 ;
+                                  rdfs:label "Living beings"@en .
+
+
+###  http://webprotege.stanford.edu/R74vfPY2ROIxB89zhnRWbBK
+webprotege:R74vfPY2ROIxB89zhnRWbBK rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Cow"@en .
+
+
+###  http://webprotege.stanford.edu/R774YDchH9zsoI0nmWIUoFy
+webprotege:R774YDchH9zsoI0nmWIUoFy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Surfboard"@en .
+
+
+###  http://webprotege.stanford.edu/R78P2MaEY8wM4I77vyBXDNy
+webprotege:R78P2MaEY8wM4I77vyBXDNy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Donut"@en .
+
+
+###  http://webprotege.stanford.edu/R78s5fbyeeDBgbDch3ZaIme
+webprotege:R78s5fbyeeDBgbDch3ZaIme rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Backpack"@en .
+
+
+###  http://webprotege.stanford.edu/R79LqZRZP4pPXY8pTPIR2HX
+webprotege:R79LqZRZP4pPXY8pTPIR2HX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Vase"@en .
+
+
+###  http://webprotege.stanford.edu/R7JL8HxiD5VVr8atDVQmHm5
+webprotege:R7JL8HxiD5VVr8atDVQmHm5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "Inorganic"@en .
+
+
+###  http://webprotege.stanford.edu/R7N01T0bWtYY8ErpSi32cz5
+webprotege:R7N01T0bWtYY8ErpSi32cz5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Sports Ball"@en .
+
+
+###  http://webprotege.stanford.edu/R7R06jdJlQ5ISq7H5F5s4pY
+webprotege:R7R06jdJlQ5ISq7H5F5s4pY rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Giraffe"@en .
+
+
+###  http://webprotege.stanford.edu/R7SLrXciGGIROd3MAcPHSEF
+webprotege:R7SLrXciGGIROd3MAcPHSEF rdf:type owl:Class ;
+                                   rdfs:label "Beer" .
+
+
+###  http://webprotege.stanford.edu/R7Tf1ROl00VviR2R9t0PKpd
+webprotege:R7Tf1ROl00VviR2R9t0PKpd rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Keyboard"@en .
+
+
+###  http://webprotege.stanford.edu/R7Vq8kIY9OVdFLCeEZfv8Ah
+webprotege:R7Vq8kIY9OVdFLCeEZfv8Ah rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Motorcycle"@en .
+
+
+###  http://webprotege.stanford.edu/R7WaW1aWj74Li3CShHhbLE5
+webprotege:R7WaW1aWj74Li3CShHhbLE5 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Tennis Racket"@en .
+
+
+###  http://webprotege.stanford.edu/R7Xy7VqI1Ca5ESCOBQvb5I9
+webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Furniture"@en .
+
+
+###  http://webprotege.stanford.edu/R7gpMfeLYaIveWpHPyidPz6
+webprotege:R7gpMfeLYaIveWpHPyidPz6 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Boat"@en .
+
+
+###  http://webprotege.stanford.edu/R7hDYU8IEkwVkVGCT4Dheuq
+webprotege:R7hDYU8IEkwVkVGCT4Dheuq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                   rdfs:label "Flatware"@en .
+
+
+###  http://webprotege.stanford.edu/R7i58zpys5WbCYiqXQutJ7
+webprotege:R7i58zpys5WbCYiqXQutJ7 rdf:type owl:Class ;
+                                  rdfs:label "Cafe" .
+
+
+###  http://webprotege.stanford.edu/R7j35dgpaerUxIViTub9Zqn
+webprotege:R7j35dgpaerUxIViTub9Zqn rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Truck"@en .
+
+
+###  http://webprotege.stanford.edu/R7kul5MTek1YUGg8ySVDaz0
+webprotege:R7kul5MTek1YUGg8ySVDaz0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Bed"@en .
+
+
+###  http://webprotege.stanford.edu/R7msKt1JC9M1d1wSteenKcc
+webprotege:R7msKt1JC9M1d1wSteenKcc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Pizza"@en .
+
+
+###  http://webprotege.stanford.edu/R7oKEUNHeN7cTcTJICRJbHL
+webprotege:R7oKEUNHeN7cTcTJICRJbHL rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Rectangular"@en .
+
+
+###  http://webprotege.stanford.edu/R7v56nmtW9FcnfocwUjdVVj
+webprotege:R7v56nmtW9FcnfocwUjdVVj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Toy"@en .
+
+
+###  http://webprotege.stanford.edu/R7wwqxxZWSqg2f22MvxUB4l
+webprotege:R7wwqxxZWSqg2f22MvxUB4l rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Airplane"@en .
+
+
+###  http://webprotege.stanford.edu/R808yCII86akPZY0WQeBMVq
+webprotege:R808yCII86akPZY0WQeBMVq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Luggage"@en .
+
+
+###  http://webprotege.stanford.edu/R82mZzUESr8PiSGJiKnEufK
+webprotege:R82mZzUESr8PiSGJiKnEufK rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Vechicle"@en .
+
+
+###  http://webprotege.stanford.edu/R83vsue8cwsl19plXysA2Hp
+webprotege:R83vsue8cwsl19plXysA2Hp rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Metal"@en .
+
+
+###  http://webprotege.stanford.edu/R84rOdf64XtBPIG2vy3MA7M
+webprotege:R84rOdf64XtBPIG2vy3MA7M rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Frisbee"@en .
+
+
+###  http://webprotege.stanford.edu/R89FeREcu8vdbWJAMi5hSor
+webprotege:R89FeREcu8vdbWJAMi5hSor rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC5UwUA3SRViEUwHlNMQeXM ;
+                                   rdfs:label "Battery"@en .
+
+
+###  http://webprotege.stanford.edu/R8FID7iAbg9ls9YrhhvgFPm
+webprotege:R8FID7iAbg9ls9YrhhvgFPm rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Lemon" .
+
+
+###  http://webprotege.stanford.edu/R8HbpOfkhthTbqNfyp6HwjI
+webprotege:R8HbpOfkhthTbqNfyp6HwjI rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                   rdfs:label "Traffic Light"@en .
+
+
+###  http://webprotege.stanford.edu/R8KX3gIN91RhyIRrBvIyAS8
+webprotege:R8KX3gIN91RhyIRrBvIyAS8 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBnDT7IKWsqsAlihm4BtEGG ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                                     owl:someValuesFrom webprotege:R9wxSLBm7koiff9mLWXNuxl
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9wvot7BtR2dBJcWzjn2zNt ;
+                                                     owl:someValuesFrom webprotege:RCx8GlfFjHVHInuQpaQUJNX
+                                                   ] ,
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                                     owl:someValuesFrom webprotege:R8iUgqiouBkkYUjXnDbvokD
+                                                   ] ;
+                                   rdfs:label "Physical entity"@en .
+
+
+###  http://webprotege.stanford.edu/R8KuHKp8ZnpTz0JgGwYAFmf
+webprotege:R8KuHKp8ZnpTz0JgGwYAFmf rdf:type owl:Class ;
+                                   rdfs:label "Coke_can" .
+
+
+###  http://webprotege.stanford.edu/R8Wk33fm0WYF5XUBos1Gc6e
+webprotege:R8Wk33fm0WYF5XUBos1Gc6e rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Toaster"@en .
+
+
+###  http://webprotege.stanford.edu/R8Xk2JAdRC7tRoQ63BLs7A2
+webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vSvtlf6LA1LRO2fvMBAEx ;
+                                   rdfs:label "Appliance"@en .
+
+
+###  http://webprotege.stanford.edu/R8g1I9sxHpUIHN6XyioU6zk
+webprotege:R8g1I9sxHpUIHN6XyioU6zk rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Material"@en .
+
+
+###  http://webprotege.stanford.edu/R8gj4y2TT6EZETMkd0BBLQf
+webprotege:R8gj4y2TT6EZETMkd0BBLQf rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polyvinyl Chloride"@en ;
+                                   skos:altLabel 3 ,
+                                                 "PVC"^^xsd:string ,
+                                                 "V"^^xsd:string ,
+                                                 "Vinyl"^^xsd:string ;
+                                   skos:definition "This hard and rigid plastic is resistant to chemicals and weathering, making it desired for building and construction applications; while the fact that it doesn’t conduct electricity makes it common for high-tech applications, such as wires and cable. It’s also widely used in medical applications because it’s impermeable to germs, is easily disinfected and provides single-use applications that reduce infections in healthcare. On the flip side, we must note that PVC is the most dangerous plastic to human health, known to leach dangerous toxins throughout its entire lifecycle (eg: lead, dioxins, vinyl chloride)."@en ;
+                                   skos:example "Plumbing pipes, credit cards, human and pet toys, rain gutters, teething rings, IV fluid bags and medical tubing and oxygen masks."@en .
+
+
+###  http://webprotege.stanford.edu/R8gtPN920yE3QXbxiZ8uw2W
+webprotege:R8gtPN920yE3QXbxiZ8uw2W rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Oven"@en .
+
+
+###  http://webprotege.stanford.edu/R8iUgqiouBkkYUjXnDbvokD
+webprotege:R8iUgqiouBkkYUjXnDbvokD rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Color"@en .
+
+
+###  http://webprotege.stanford.edu/R8vSvtlf6LA1LRO2fvMBAEx
+webprotege:R8vSvtlf6LA1LRO2fvMBAEx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Device"@en .
+
+
+###  http://webprotege.stanford.edu/R8vrxFiYnrjoecwZvOyVXll
+webprotege:R8vrxFiYnrjoecwZvOyVXll rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RKYeflRbbcFq2No64bx9ZY ;
+                                   rdfs:label "Household Fixtures"@en .
+
+
+###  http://webprotege.stanford.edu/R94uFZngrFPQGy6R6FA8hu3
+webprotege:R94uFZngrFPQGy6R6FA8hu3 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Cake"@en .
+
+
+###  http://webprotege.stanford.edu/R97KQR2V6Hz9GGk0DS1Bh1K
+webprotege:R97KQR2V6Hz9GGk0DS1Bh1K rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Hair drier"@en .
+
+
+###  http://webprotege.stanford.edu/R9D4DuGkf3igT9Il7Yb47FM
+webprotege:R9D4DuGkf3igT9Il7Yb47FM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC5UwUA3SRViEUwHlNMQeXM ;
+                                   rdfs:label "Electronics"@en .
+
+
+###  http://webprotege.stanford.edu/R9IO9X8T4lCqtYtUkQDoUUF
+webprotege:R9IO9X8T4lCqtYtUkQDoUUF rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Wine Glass"@en .
+
+
+###  http://webprotege.stanford.edu/R9NxcwHBxkE6qebmzH064s
+webprotege:R9NxcwHBxkE6qebmzH064s rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Yellow"@en .
+
+
+###  http://webprotege.stanford.edu/R9OSKj4gXkHRJZHl815ChEq
+webprotege:R9OSKj4gXkHRJZHl815ChEq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Vegetable"@en .
+
+
+###  http://webprotege.stanford.edu/R9Oi64HLtPHjsemHLH3Qhfy
+webprotege:R9Oi64HLtPHjsemHLH3Qhfy rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Meat"@en .
+
+
+###  http://webprotege.stanford.edu/R9STkmxNXbezpcQSd9kpvTq
+webprotege:R9STkmxNXbezpcQSd9kpvTq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Sports equipment"@en .
+
+
+###  http://webprotege.stanford.edu/R9THBn4AV2W3Dxp1nk3mSJZ
+webprotege:R9THBn4AV2W3Dxp1nk3mSJZ rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Mouse"@en .
+
+
+###  http://webprotege.stanford.edu/R9V1QIDTrC8548j1X9TlWcv
+webprotege:R9V1QIDTrC8548j1X9TlWcv rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Banana"@en .
+
+
+###  http://webprotege.stanford.edu/R9WRideYfbGys6OIZlnnrKN
+webprotege:R9WRideYfbGys6OIZlnnrKN rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                   rdfs:label "Spoon"@en .
+
+
+###  http://webprotege.stanford.edu/R9b3kxSK55Q2JOPgEaRbPS7
+webprotege:R9b3kxSK55Q2JOPgEaRbPS7 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Potted Plant"@en .
+
+
+###  http://webprotege.stanford.edu/R9cj2lOLgLf6tPk3UDyQoxT
+webprotege:R9cj2lOLgLf6tPk3UDyQoxT rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "High-Density Polyethylene"@en ;
+                                   skos:altLabel 2 ,
+                                                 "HDPE"^^xsd:string ;
+                                   skos:definition "Collectively, Polyethylene is the most common plastics in the world, but it’s classified into three types: High-Density, Low-Density and Linear Low-Density. High-Density Polyethylene is strong and resistant to moisture and chemicals, which makes it ideal for cartons, containers, pipes and other building materials."@en ;
+                                   skos:example "Milk cartons, detergent bottles, cereal box liners, toys, buckets, park benches and rigid pipes."@en .
+
+
+###  http://webprotege.stanford.edu/R9f2Wp4ohtpKnkG773yi7hs
+webprotege:R9f2Wp4ohtpKnkG773yi7hs rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Baseball Glove"@en .
+
+
+###  http://webprotege.stanford.edu/R9f3EYxkCaVcMehc9HP1KnE
+webprotege:R9f3EYxkCaVcMehc9HP1KnE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9upIGix4FgiLrMRTARsN4X ;
+                                   rdfs:label "Toothbrush"@en .
+
+
+###  http://webprotege.stanford.edu/R9fObUKXBn9wPSHERp2oL4E
+webprotege:R9fObUKXBn9wPSHERp2oL4E rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Couch"@en .
+
+
+###  http://webprotege.stanford.edu/R9gNts85LFhzYWISjHMX0C
+webprotege:R9gNts85LFhzYWISjHMX0C rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                  rdfs:label "Remote"@en .
+
+
+###  http://webprotege.stanford.edu/R9hNB9omIjr6Z4rpeQZUuEJ
+webprotege:R9hNB9omIjr6Z4rpeQZUuEJ rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Cat"@en .
+
+
+###  http://webprotege.stanford.edu/R9lQgb8ZyKQGDPQFCDDwKdo
+webprotege:R9lQgb8ZyKQGDPQFCDDwKdo rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Car"@en .
+
+
+###  http://webprotege.stanford.edu/R9upIGix4FgiLrMRTARsN4X
+webprotege:R9upIGix4FgiLrMRTARsN4X rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                   rdfs:label "Tool"@en .
+
+
+###  http://webprotege.stanford.edu/R9wxSLBm7koiff9mLWXNuxl
+webprotege:R9wxSLBm7koiff9mLWXNuxl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Shape"@en .
+
+
+###  http://webprotege.stanford.edu/R9zi3LWcsVbAdRX6lQmkwk4
+webprotege:R9zi3LWcsVbAdRX6lQmkwk4 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Baseball Bat"@en .
+
+
+###  http://webprotege.stanford.edu/RB0Wt3POXA2xN39v5Fj6Yib
+webprotege:RB0Wt3POXA2xN39v5Fj6Yib rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R6aIeFrPbjLN2h34NP0aku ;
+                                   rdfs:label "Animal"@en .
+
+
+###  http://webprotege.stanford.edu/RB2VNRzE8P2HEbI6tUfTJ5q
+webprotege:RB2VNRzE8P2HEbI6tUfTJ5q rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polypropylene"@en ;
+                                   skos:altLabel 5 ,
+                                                 "PP"^^xsd:string ;
+                                   skos:definition "This is one of the most durable types of plastic. It is more heat resistant than some others, which makes it ideal for such things as food packaging and food storage that’s made to hold hot items or be heated itself. It’s flexible enough to allow for mild bending, but it retains its shape and strength for a long time."@en ;
+                                   skos:example "Straws, bottle caps, prescription bottles, hot food containers, packaging tape, disposable diapers and DVD/CD boxes."@en .
+
+
+###  http://webprotege.stanford.edu/RB7nLXx7YBatESj1BKMOj93
+webprotege:RB7nLXx7YBatESj1BKMOj93 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Glass"@en .
+
+
+###  http://webprotege.stanford.edu/RB7yxF8fQbQ8MVgxcDnyV1g
+webprotege:RB7yxF8fQbQ8MVgxcDnyV1g rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RvYDNqeobt0fsaRhUNUHOy ;
+                                   rdfs:label "Tie"@en .
+
+
+###  http://webprotege.stanford.edu/RBEWf6OBz3IBBXrgkRLO0Lm
+webprotege:RBEWf6OBz3IBBXrgkRLO0Lm rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Skateboard"@en .
+
+
+###  http://webprotege.stanford.edu/RBKM9ab24o7vhABbDgC17nM
+webprotege:RBKM9ab24o7vhABbDgC17nM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Dining Table"@en .
+
+
+###  http://webprotege.stanford.edu/RBRgPDRZe6pGG9GlJSQlvO4
+webprotege:RBRgPDRZe6pGG9GlJSQlvO4 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "TV"@en .
+
+
+###  http://webprotege.stanford.edu/RBVqaHlXcJu1WTejQhH7wkj
+webprotege:RBVqaHlXcJu1WTejQhH7wkj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                   rdfs:label "Cup"@en .
+
+
+###  http://webprotege.stanford.edu/RBWCOYQphFRqHeQsoNjAZOu
+webprotege:RBWCOYQphFRqHeQsoNjAZOu rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Cylinder"@en .
+
+
+###  http://webprotege.stanford.edu/RBXqigg4TxqgfR5FLlYQX4
+webprotege:RBXqigg4TxqgfR5FLlYQX4 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                  rdfs:label "Zebra"@en .
+
+
+###  http://webprotege.stanford.edu/RBYNY0iqfanryuIPzZ1u6vj
+webprotege:RBYNY0iqfanryuIPzZ1u6vj rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Refrigerator"@en .
+
+
+###  http://webprotege.stanford.edu/RBam8q6px516D0SNZraWsck
+webprotege:RBam8q6px516D0SNZraWsck rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Horse"@en .
+
+
+###  http://webprotege.stanford.edu/RBcA7g8R3NaQMj9dsnCyctw
+webprotege:RBcA7g8R3NaQMj9dsnCyctw rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Bear"@en .
+
+
+###  http://webprotege.stanford.edu/RBiBEwV6E98jD03X6r6lHkx
+webprotege:RBiBEwV6E98jD03X6r6lHkx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                   rdfs:label "Chair"@en .
+
+
+###  http://webprotege.stanford.edu/RBidzG8kOz1dElvXIJ68mdR
+webprotege:RBidzG8kOz1dElvXIJ68mdR rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Round"@en .
+
+
+###  http://webprotege.stanford.edu/RBjIqamHoZPUhmk4DUNxAlX
+webprotege:RBjIqamHoZPUhmk4DUNxAlX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9upIGix4FgiLrMRTARsN4X ;
+                                   rdfs:label "Scissors"@en .
+
+
+###  http://webprotege.stanford.edu/RBmM7ZW2pUHqqPrROBJ3YKq
+webprotege:RBmM7ZW2pUHqqPrROBJ3YKq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                   rdfs:label "Food"@en .
+
+
+###  http://webprotege.stanford.edu/RBnDT7IKWsqsAlihm4BtEGG
+webprotege:RBnDT7IKWsqsAlihm4BtEGG rdf:type owl:Class ;
+                                   rdfs:label "Entity"@en .
+
+
+###  http://webprotege.stanford.edu/RBvJc2lNe87iJv5zFK9ZxXF
+webprotege:RBvJc2lNe87iJv5zFK9ZxXF rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Polystyrene"@en ;
+                                   skos:altLabel 6 ,
+                                                 "PS"^^xsd:string ,
+                                                 "Styrofoam"^^xsd:string ;
+                                   skos:definition "Better known as Styrofoam, this rigid plastic is low-cost and insulates very well, which has made it a staple in the food, packaging and construction industries. Like PVC, polystyrene is considered to be a dangerous plastic. It can easily leach harmful toxins such as styrene (a neurotoxin), which can easily then be absorbed by food and thus ingested by humans."@en ;
+                                   skos:example "Cups, takeout food containers, shipping and product packaging, egg cartons, cutlery and building insulation."@en .
+
+
+###  http://webprotege.stanford.edu/RC2JmhbMLDrKtZIji1hgBRt
+webprotege:RC2JmhbMLDrKtZIji1hgBRt rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Plastic"@en .
+
+
+###  http://webprotege.stanford.edu/RC5UwUA3SRViEUwHlNMQeXM
+webprotege:RC5UwUA3SRViEUwHlNMQeXM rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                   rdfs:label "Hazardous"@en .
+
+
+###  http://webprotege.stanford.edu/RC5g7LkgzWg9SZasOrhmWik
+webprotege:RC5g7LkgzWg9SZasOrhmWik rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vrxFiYnrjoecwZvOyVXll ;
+                                   rdfs:label "Toilet"@en .
+
+
+###  http://webprotege.stanford.edu/RC7mm8Vkbb5jnOyLBs60FMo
+webprotege:RC7mm8Vkbb5jnOyLBs60FMo rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Train"@en .
+
+
+###  http://webprotege.stanford.edu/RCD1KWKIvmzNYQJJnx0lOBl
+webprotege:RCD1KWKIvmzNYQJJnx0lOBl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R82mZzUESr8PiSGJiKnEufK ;
+                                   rdfs:label "Bus"@en .
+
+
+###  http://webprotege.stanford.edu/RCFP4U5Y7H2vPhn8RsiTIN3
+webprotege:RCFP4U5Y7H2vPhn8RsiTIN3 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                   rdfs:label "Kite"@en .
+
+
+###  http://webprotege.stanford.edu/RCKlxFwXlRzaw94gknKBvfx
+webprotege:RCKlxFwXlRzaw94gknKBvfx rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                   rdfs:label "Fork"@en .
+
+
+###  http://webprotege.stanford.edu/RCLIyOqdh4jwKqWLVF8ZsCs
+webprotege:RCLIyOqdh4jwKqWLVF8ZsCs rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vrxFiYnrjoecwZvOyVXll ;
+                                   rdfs:label "Sink"@en .
+
+
+###  http://webprotege.stanford.edu/RCNlIUlYrkvfnU6CkTushuk
+webprotege:RCNlIUlYrkvfnU6CkTushuk rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Elephant"@en .
+
+
+###  http://webprotege.stanford.edu/RCSGMZIHg0uV1SVQBwyjkjN
+webprotege:RCSGMZIHg0uV1SVQBwyjkjN rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "Blue"@en .
+
+
+###  http://webprotege.stanford.edu/RCTjQm1Z7Ko94kXhzGWA6Bl
+webprotege:RCTjQm1Z7Ko94kXhzGWA6Bl rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Bird"@en .
+
+
+###  http://webprotege.stanford.edu/RCVzeJkAP7dMgpAY16zmDnE
+webprotege:RCVzeJkAP7dMgpAY16zmDnE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:comment "This is one of the most commonly used plastics. It’s lightweight, strong, typically transparent and is often used in food packaging and fabrics (polyester)."@en ;
+                                   rdfs:label "Polyethylene Terephthalate"@en ;
+                                   skos:altLabel 1 ,
+                                                 "PET"^^xsd:string ,
+                                                 "PETE"^^xsd:string ;
+                                   skos:example "Beverage bottles, Food bottles/jars (salad dressing, peanut butter, honey, etc.) and polyester clothing or rope"@eb .
+
+
+###  http://webprotege.stanford.edu/RCeV1ZKU9OBOalkrtYg4yXX
+webprotege:RCeV1ZKU9OBOalkrtYg4yXX rdf:type owl:Class ;
+                                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                         owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                         owl:someValuesFrom webprotege:RCg0thBzVa7RqR06evY8n7x
+                                                       ] ;
+                                   rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                   rdfs:label "Fruit"@en .
+
+
+###  http://webprotege.stanford.edu/RCg0thBzVa7RqR06evY8n7x
+webprotege:RCg0thBzVa7RqR06evY8n7x rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8g1I9sxHpUIHN6XyioU6zk ;
+                                   rdfs:label "Organic"@en .
+
+
+###  http://webprotege.stanford.edu/RCjzzEpj00ZjiSVXI44Sli0
+webprotege:RCjzzEpj00ZjiSVXI44Sli0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9OSKj4gXkHRJZHl815ChEq ;
+                                   rdfs:label "Carrot"@en .
+
+
+###  http://webprotege.stanford.edu/RCm0VvmOS61XrrymfdVDCAz
+webprotege:RCm0VvmOS61XrrymfdVDCAz rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                   rdfs:label "Peach" .
+
+
+###  http://webprotege.stanford.edu/RCofUR8mpSt4OJ7uRCOsB9V
+webprotege:RCofUR8mpSt4OJ7uRCOsB9V rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Cell phone"@en .
+
+
+###  http://webprotege.stanford.edu/RCqiOdkGeKd3LqEKIXsYnZh
+webprotege:RCqiOdkGeKd3LqEKIXsYnZh rdf:type owl:Class ;
+                                   rdfs:label "Milk" .
+
+
+###  http://webprotege.stanford.edu/RCrl8SmbK0VzLKlF9zMKCEE
+webprotege:RCrl8SmbK0VzLKlF9zMKCEE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Dog"@en .
+
+
+###  http://webprotege.stanford.edu/RCtHfLEJg6l5LLwIu0fCiTc
+webprotege:RCtHfLEJg6l5LLwIu0fCiTc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                   rdfs:label "Laptop"@en .
+
+
+###  http://webprotege.stanford.edu/RCx8GlfFjHVHInuQpaQUJNX
+webprotege:RCx8GlfFjHVHInuQpaQUJNX rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RhRDzWota6usMOn3w6utws ;
+                                   rdfs:label "Weight"@en .
+
+
+###  http://webprotege.stanford.edu/RCybIgWHx9rJjpHWXvtEJ24
+webprotege:RCybIgWHx9rJjpHWXvtEJ24 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "Black"@en .
+
+
+###  http://webprotege.stanford.edu/RDCgCRme5DftUt6nmtArNwE
+webprotege:RDCgCRme5DftUt6nmtArNwE rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                   rdfs:label "White"@en .
+
+
+###  http://webprotege.stanford.edu/RDIyhmCXvCqICdpMqk9fI5F
+webprotege:RDIyhmCXvCqICdpMqk9fI5F rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl ;
+                                   rdfs:label "Triangular"@en .
+
+
+###  http://webprotege.stanford.edu/RDJ4KJaH609bVd5TR720CML
+webprotege:RDJ4KJaH609bVd5TR720CML rdf:type owl:Class ;
+                                   rdfs:label "Salt" .
+
+
+###  http://webprotege.stanford.edu/RDOzhT58MS0B4lnwhk3KYLe
+webprotege:RDOzhT58MS0B4lnwhk3KYLe rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Suitcase"@en .
+
+
+###  http://webprotege.stanford.edu/RDSVTkKlZB3drplxMCXlGHf
+webprotege:RDSVTkKlZB3drplxMCXlGHf rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Other"@en ;
+                                   skos:altLabel 7 ;
+                                   skos:definition "This category is a catch-all for other types of plastic that don’t belong in any of the other six categories or are combinations of multiple types. We include it because you might occasionally come across the #7 recycling code, so it’s important to know what it means. The most important thing here is that these plastics aren’t typically recyclable."@en ;
+                                   skos:example "Eyeglasses, baby and sports bottles, electronics, CD/DVDs, lighting fixtures and clear plastic cutlery."@en .
+
+
+###  http://webprotege.stanford.edu/RDToVN6c9h84eeUaPK0MlKq
+webprotege:RDToVN6c9h84eeUaPK0MlKq rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RMwg77kLl7zsXz91xl1cPY ;
+                                   rdfs:label "Book"@en .
+
+
+###  http://webprotege.stanford.edu/RDfwIVnudA7LLv2TmyvqkFP
+webprotege:RDfwIVnudA7LLv2TmyvqkFP rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                   rdfs:label "Fire Hydrant"@en .
+
+
+###  http://webprotege.stanford.edu/RDinQKsIE1x17h7jTLnp3hc
+webprotege:RDinQKsIE1x17h7jTLnp3hc rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RB0Wt3POXA2xN39v5Fj6Yib ;
+                                   rdfs:label "Sheep"@en .
+
+
+###  http://webprotege.stanford.edu/RDpk9eWpTQHrcWEc3HuypbC
+webprotege:RDpk9eWpTQHrcWEc3HuypbC rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R9OSKj4gXkHRJZHl815ChEq ;
+                                   rdfs:label "Broccoli"@en .
+
+
+###  http://webprotege.stanford.edu/RDpyu1cmWlVTIP7uPJjcrk2
+webprotege:RDpyu1cmWlVTIP7uPJjcrk2 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R808yCII86akPZY0WQeBMVq ;
+                                   rdfs:label "Handbag"@en .
+
+
+###  http://webprotege.stanford.edu/RDscAxbVFrwncRg25OVPa5B
+webprotege:RDscAxbVFrwncRg25OVPa5B rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:R8vSvtlf6LA1LRO2fvMBAEx ;
+                                   rdfs:label "Clock"@en .
+
+
+###  http://webprotege.stanford.edu/RDsnIFmH0maiqUCeCQ5ZTj0
+webprotege:RDsnIFmH0maiqUCeCQ5ZTj0 rdf:type owl:Class ;
+                                   rdfs:subClassOf webprotege:RC2JmhbMLDrKtZIji1hgBRt ;
+                                   rdfs:label "Low-Density Polyethylene"@en ;
+                                   skos:altLabel 4 ,
+                                                 "LDPE"^^xsd:string ;
+                                   skos:definition "A softer, clearer, and more flexible version of HDPE. It’s often used as a liner inside beverage cartons, and in corrosion-resistant work surfaces and other products."@en ;
+                                   skos:example "Plastic/cling wrap, sandwich and bread bags, bubble wrap, garbage bags, grocery bags and beverage cups."@en .
+
+
+###  http://webprotege.stanford.edu/RFNniCGnYdZKUjzIQVRMS4
+webprotege:RFNniCGnYdZKUjzIQVRMS4 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Strawberry" .
+
+
+###  http://webprotege.stanford.edu/RHRFUHuO95THMUmF0rT5ac
+webprotege:RHRFUHuO95THMUmF0rT5ac rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8KX3gIN91RhyIRrBvIyAS8 ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:R9NoCBglmnVNPFtbsMOatpR ;
+                                                    owl:someValuesFrom webprotege:R9wxSLBm7koiff9mLWXNuxl
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:R9zxmOr4HnzHJ5fNIPTHHjb ;
+                                                    owl:someValuesFrom webprotege:R8iUgqiouBkkYUjXnDbvokD
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                    owl:someValuesFrom webprotege:R8g1I9sxHpUIHN6XyioU6zk
+                                                  ] ;
+                                  rdfs:label "Object"@en .
+
+
+###  http://webprotege.stanford.edu/RJnEEewRWTbuIm46ci6EnF
+webprotege:RJnEEewRWTbuIm46ci6EnF rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                  rdfs:label "Sandwich"@en .
+
+
+###  http://webprotege.stanford.edu/RKYeflRbbcFq2No64bx9ZY
+webprotege:RKYeflRbbcFq2No64bx9ZY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Fixture"@en .
+
+
+###  http://webprotege.stanford.edu/RMwg77kLl7zsXz91xl1cPY
+webprotege:RMwg77kLl7zsXz91xl1cPY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:comment "An object made by a human being, typically one of cultural or historical interest."^^xsd:string ;
+                                  rdfs:label "Artefact"@en .
+
+
+###  http://webprotege.stanford.edu/RNZ5D4CHFr9eBkuGVyRFru
+webprotege:RNZ5D4CHFr9eBkuGVyRFru rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Utensil"@en .
+
+
+###  http://webprotege.stanford.edu/ROLtsgjReYoukrUgHCySjw
+webprotege:ROLtsgjReYoukrUgHCySjw rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBmM7ZW2pUHqqPrROBJ3YKq ;
+                                  rdfs:label "Hot Dog"@en .
+
+
+###  http://webprotege.stanford.edu/RRI4398KdRQkhP1imJvtDl
+webprotege:RRI4398KdRQkhP1imJvtDl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Green"@en .
+
+
+###  http://webprotege.stanford.edu/RTD5wnz7hmZr2AuzOLadgm
+webprotege:RTD5wnz7hmZr2AuzOLadgm rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Orange"@en .
+
+
+###  http://webprotege.stanford.edu/RTmBIYFQJ9SIBCVTMzYspb
+webprotege:RTmBIYFQJ9SIBCVTMzYspb rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R9STkmxNXbezpcQSd9kpvTq ;
+                                  rdfs:label "Snowboard"@en .
+
+
+###  http://webprotege.stanford.edu/RWWDq0BxYsOMArNf5WgjzM
+webprotege:RWWDq0BxYsOMArNf5WgjzM rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RCeV1ZKU9OBOalkrtYg4yXX ;
+                                  rdfs:label "Apple"@en .
+
+
+###  http://webprotege.stanford.edu/RYBCJyskVFeot1Wc1NL4Xl
+webprotege:RYBCJyskVFeot1Wc1NL4Xl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                  rdfs:label "Bowl"@en .
+
+
+###  http://webprotege.stanford.edu/RZ6QAI6NZ2zB0s9C6ILorY
+webprotege:RZ6QAI6NZ2zB0s9C6ILorY rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD ;
+                                  rdfs:label "Red"@en .
+
+
+###  http://webprotege.stanford.edu/RZlgWVOxorbGoEuCYnMOkr
+webprotege:RZlgWVOxorbGoEuCYnMOkr rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7v56nmtW9FcnfocwUjdVVj ;
+                                  rdfs:label "Teddy bear"@en .
+
+
+###  http://webprotege.stanford.edu/RcwieJlqQPd6p0k286AGBu
+webprotege:RcwieJlqQPd6p0k286AGBu rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7Xy7VqI1Ca5ESCOBQvb5I9 ;
+                                  rdfs:label "Bench"@en .
+
+
+###  http://webprotege.stanford.edu/Rf96HEgpBh1Mnsi83cmqYA
+webprotege:Rf96HEgpBh1Mnsi83cmqYA rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R8Xk2JAdRC7tRoQ63BLs7A2 ;
+                                  rdfs:label "Microwave"@en .
+
+
+###  http://webprotege.stanford.edu/RfiN8YKmGGdK78G4UdiiVx
+webprotege:RfiN8YKmGGdK78G4UdiiVx rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                  rdfs:label "Textile"@en .
+
+
+###  http://webprotege.stanford.edu/Rfzvdg9kbhngjCSaG52Is0
+webprotege:Rfzvdg9kbhngjCSaG52Is0 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RBVqaHlXcJu1WTejQhH7wkj ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                                    owl:someValuesFrom webprotege:Rzwn2E399SljTgV6JzTcbl
+                                                  ] ;
+                                  rdfs:label "Papercup"@en .
+
+
+###  http://webprotege.stanford.edu/RhRDzWota6usMOn3w6utws
+webprotege:RhRDzWota6usMOn3w6utws rdf:type owl:Class ;
+                                  rdfs:label "Conceptual Entity"@en .
+
+
+###  http://webprotege.stanford.edu/RmFWOgWLvfQCrl2JD2tqFz
+webprotege:RmFWOgWLvfQCrl2JD2tqFz rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R6aIeFrPbjLN2h34NP0aku ;
+                                  rdfs:label "Person"@en .
+
+
+###  http://webprotege.stanford.edu/RqlvWRWgbaYiZBnD4lLUiZ
+webprotege:RqlvWRWgbaYiZBnD4lLUiZ rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rsylb2P7HBl2uJirbVbpVf ;
+                                  rdfs:label "Stop Sign"@en .
+
+
+###  http://webprotege.stanford.edu/Rsylb2P7HBl2uJirbVbpVf
+webprotege:Rsylb2P7HBl2uJirbVbpVf rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RKYeflRbbcFq2No64bx9ZY ;
+                                  rdfs:label "Street Fixtures"@en .
+
+
+###  http://webprotege.stanford.edu/RvYDNqeobt0fsaRhUNUHOy
+webprotege:RvYDNqeobt0fsaRhUNUHOy rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RHRFUHuO95THMUmF0rT5ac ;
+                                  rdfs:label "Clothing"@en .
+
+
+###  http://webprotege.stanford.edu/Rw2o712oGbr3OOtX6XXQq3
+webprotege:Rw2o712oGbr3OOtX6XXQq3 rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7hDYU8IEkwVkVGCT4Dheuq ;
+                                  rdfs:label "Knife"@en .
+
+
+###  http://webprotege.stanford.edu/RyzuVpXqsiZqnCrzsItXpt
+webprotege:RyzuVpXqsiZqnCrzsItXpt rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ ;
+                                  rdfs:label "Bottle"@en .
+
+
+###  http://webprotege.stanford.edu/Rzt5aQUAcyi1YQ9QpiC8lQ
+webprotege:Rzt5aQUAcyi1YQ9QpiC8lQ rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:RNZ5D4CHFr9eBkuGVyRFru ;
+                                  rdfs:label "Container"@en .
+
+
+###  http://webprotege.stanford.edu/Rzwn2E399SljTgV6JzTcbl
+webprotege:Rzwn2E399SljTgV6JzTcbl rdf:type owl:Class ;
+                                  rdfs:subClassOf webprotege:R7JL8HxiD5VVr8atDVQmHm5 ;
+                                  rdfs:label "Paper"@en .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OrangeColor
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OrangeColor> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherColor
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherColor> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf webprotege:R8iUgqiouBkkYUjXnDbvokD .
+
+
+###  http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherShape
+<http://www.semanticweb.org/thijs/ontologies/laptopontology/OtherShape> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf webprotege:R9wxSLBm7koiff9mLWXNuxl .
+
+
+###  http://www.w3.org/ns/sosa/#Actuator
+<http://www.w3.org/ns/sosa/#Actuator> rdf:type owl:Class .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#OrganicThrash
+thijs2:OrganicThrash rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                           owl:someValuesFrom webprotege:RCg0thBzVa7RqR06evY8n7x
+                                         ] ;
+                     rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#PaperThrash
+thijs2:PaperThrash rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                         owl:someValuesFrom webprotege:Rzwn2E399SljTgV6JzTcbl
+                                       ] ;
+                   rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#PlasticThrash
+thijs2:PlasticThrash rdf:type owl:Class ;
+                     owl:equivalentClass [ rdf:type owl:Restriction ;
+                                           owl:onProperty webprotege:RCYrfGBZUimZgN5yyvtszyP ;
+                                           owl:someValuesFrom webprotege:RC2JmhbMLDrKtZIji1hgBRt
+                                         ] ;
+                     rdfs:subClassOf thijs2:Thrash .
+
+
+###  urn:webprotege:ontology:eb1b07c2-68da-4f99-a0da-8ad9f4ad5a3d#Thrash
+thijs2:Thrash rdf:type owl:Class .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-38-606679.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-38-606679" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-39-489949.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-39-489949" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-40-473510.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-40-473510" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-41-456982.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-41-456982" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-41-717198.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-41-717198" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-42-507321.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-42-507321" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-43-545708.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-43-545708" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-44-541461.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-44-541461" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-45-702862.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-45-702862" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-46-518670.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-46-518670" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-47-779325.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-47-779325" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-48-641112.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-48-641112" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-49-592497.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-49-592497" .
+
+
+<http://example.com/locobot/images#/home/user/kai_ws/src/locobot_simulation/scripts/stream_reasoning/recordings/2023-06-15-12-28-38/images/image2023-06-15-12-28-50-549730.jpg> <https://www.w3.org/TR/2022/CRD-owl-time-20221115#hasTime> "2023-06-15-12-28-50-549730" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

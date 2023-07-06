@@ -1,0 +1,206 @@
+@prefix : <http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4#> .
+@prefix st: <http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4> .
+
+<http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/containsAnimal
+st:containsAnimal rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/containsDistrict
+st:containsDistrict rdf:type owl:ObjectProperty ,
+                             owl:AsymmetricProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/eatsAnimal
+st:eatsAnimal rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/huntsAnimal
+st:huntsAnimal rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/sharesShelterWith
+st:sharesShelterWith rdf:type owl:ObjectProperty ,
+                              owl:SymmetricProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/animalProperty
+st:animalProperty rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/hasBinomialName
+st:hasBinomialName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/hasFullName
+st:hasFullName rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/representsBiome
+st:representsBiome rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Animal
+st:Animal rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Cannibal
+st:Cannibal rdf:type owl:Class ;
+            rdfs:subClassOf st:Animal ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty st:eatsAnimal ;
+                              owl:hasSelf "true"^^xsd:boolean
+                            ] .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/District
+st:District rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Fish
+st:Fish rdf:type owl:Class ;
+        rdfs:subClassOf st:Animal .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Mammal
+st:Mammal rdf:type owl:Class ;
+          rdfs:subClassOf st:Animal .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Marsupial
+st:Marsupial rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty st:animalProperty ;
+                                   owl:hasValue "Pouches"
+                                 ] ;
+             rdfs:subClassOf st:Mammal .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Predator
+st:Predator rdf:type owl:Class ;
+            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                  owl:onProperty st:huntsAnimal ;
+                                  owl:someValuesFrom st:Animal
+                                ] ;
+            rdfs:subClassOf st:Animal ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty st:eatsAnimal ;
+                              owl:someValuesFrom st:Animal
+                            ] .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Zoo
+st:Zoo rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty st:containsDistrict ;
+                             owl:someValuesFrom st:District
+                           ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/AfricaDistrict
+st:AfricaDistrict rdf:type owl:NamedIndividual ,
+                           st:District ;
+                  st:containsAnimal st:Okapi ;
+                  st:representsBiome "Terrestial/Temperate" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/AfricanElephant
+st:AfricanElephant rdf:type owl:NamedIndividual ,
+                            st:Animal ;
+                   st:sharesShelterWith st:Okapi ;
+                   st:hasBinomialName "Loxodonta" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Aquarium
+st:Aquarium rdf:type owl:NamedIndividual ;
+            st:containsAnimal st:GiantGrouper ;
+            st:representsBiome "Marinal/Oceanic" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Artis
+st:Artis rdf:type owl:NamedIndividual ,
+                  st:Zoo ;
+         st:containsDistrict st:Aquarium ;
+         st:hasFullName "Natura Artis Magistra" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/BengalTiger
+st:BengalTiger rdf:type owl:NamedIndividual ;
+               st:eatsAnimal st:GiantGrouper ;
+               st:hasBinomialName "Panthera tigris" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Blijdorp
+st:Blijdorp rdf:type owl:NamedIndividual ;
+            st:containsDistrict st:AfricaDistrict ;
+            st:hasFullName "Diergaarde Blijdorp Rotterdam Zoo" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/CatShark
+st:CatShark rdf:type owl:NamedIndividual ,
+                     st:Cannibal ;
+            st:eatsAnimal st:GiantGrouper ;
+            st:hasBinomialName "Scyliorhinus canicula" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/GiantGrouper
+st:GiantGrouper rdf:type owl:NamedIndividual ,
+                         st:Fish ;
+                st:eatsAnimal st:CatShark ;
+                st:hasBinomialName "Epinephelus lanceolatus" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Kangaroo
+st:Kangaroo rdf:type owl:NamedIndividual ,
+                     st:Marsupial ;
+            st:sharesShelterWith st:Wallaby ;
+            st:animalProperty "Pouches" ;
+            st:hasBinomialName "Macropus giganteus" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/KomodoDragon
+st:KomodoDragon rdf:type owl:NamedIndividual ;
+                st:huntsAnimal st:Wallaby ;
+                st:hasBinomialName "Varanus komodoensis" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Okapi
+st:Okapi rdf:type owl:NamedIndividual ,
+                  st:Mammal ;
+         st:sharesShelterWith st:AfricanElephant ;
+         st:hasBinomialName "Okapia johnstoni" .
+
+
+###  http://www.semanticweb.org/thijs/ThijsGrootjansAssignment4/Wallaby
+st:Wallaby rdf:type owl:NamedIndividual ;
+           st:sharesShelterWith st:Kangaroo ;
+           st:animalProperty "Pouches" ;
+           st:hasBinomialName "Notamacropus agilis" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
