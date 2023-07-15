@@ -8,17 +8,20 @@ df = pd.read_excel('my_stats.xlsx')
 mean_empty_time = df.groupby('Ontology')['Empty ontology execution time'].mean()
 mean_reasoner_time = df.groupby('Ontology')['Reasoner Execution Time'].mean()
 
+plt.rcParams.update({'font.size': 22})
 
 # Plotting
 plt.figure(figsize=(10, 6))
-plt.plot(mean_empty_time.index, mean_empty_time, marker='o', label='Mean Empty Ontology Time')
-plt.plot(mean_reasoner_time.index, mean_reasoner_time, marker='o', label='Mean Reasoner Time')
+plt.plot(mean_empty_time.index, mean_empty_time, marker='o', label='Empty Ontology Execution Time')
+plt.plot(mean_reasoner_time.index, mean_reasoner_time, marker='o', label='Mean Timestamp Execution Time')
+
+plt.xticks(range(len(mean_empty_time.index)), mean_empty_time.index.astype(str).str[-1])
 
 plt.xlabel('Version')
 plt.ylabel('Execution Time')
-plt.title('Mean Execution Time for Empty Ontology and Reasoner by Version')
-plt.legend()
-plt.xticks(rotation=90)
+legend = plt.legend()
+legend.get_frame().set_alpha(0)
+plt.xticks()
 plt.grid(True)
-
+plt.tight_layout()
 plt.show()

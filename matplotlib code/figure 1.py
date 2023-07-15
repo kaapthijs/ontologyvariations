@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 df = pd.read_excel('my_stats.xlsx')
 
 # Extract the required columns
-ontology_versions = df['Ontology']
+ontology_versions = df['Ontology'].astype(str).str[-1]
 ontology_inferences = df['Ontology inferences']
 ontology_subclasses = df['Ontology subclass axioms']
 ontology_thrash_instances = df['Ontology Thrash instance count']
@@ -18,15 +18,18 @@ reasoner_execution_time = df['Reasoner Execution Time']
 
 dataset_execution_time = df['Entire dataset execution time']
 
+# Increase the font size
+plt.rcParams.update({'font.size': 22})
+
 # Create a line plot for Inferred Triples
 plt.figure(figsize=(10, 6))
 plt.bar(ontology_versions, dataset_execution_time)
-plt.bar(ontology_versions, dataset_execution_time)
 
 plt.xlabel('Version')
-plt.ylabel('Entire dataset execution time')
-plt.title('Entire dataset execution time vs. Version')
-plt.xticks(rotation=45)
+plt.ylabel('Execution Time in s')
+#plt.title('Datastream execution time for each version')
+plt.xticks()
 plt.grid(True)
+plt.tight_layout()
 plt.show()
 

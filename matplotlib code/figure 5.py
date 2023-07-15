@@ -8,31 +8,33 @@ df = pd.read_excel('my_stats.xlsx')
 # Get the unique versions
 versions = df['Ontology'].unique()
 
+# Increase the font size
+plt.rcParams.update({'font.size': 22})
+
 # Iterate over each version and plot the data
-for version in versions:
     # Filter the data for the current version
-    version_df = df[df['Ontology'] == version]
-    
-    thrash_instances = version_df['Thrash instance count']
-    reasoner_execution_time = version_df['Reasoner Execution Time']
-    ontology_execution_time = version_df['Empty ontology execution time']
+version_df = df[df['Ontology'] == "version4"]
 
-    # Plotting the data
-    plt.figure(figsize=(10, 6))
+thrash_instances = version_df['Thrash instance count']
+reasoner_execution_time = version_df['Reasoner Execution Time']
+ontology_execution_time = version_df['Empty ontology execution time']
 
-    mean_reasoner_execution_time = version_df.groupby('Thrash instance count')['Reasoner Execution Time'].mean()
+# Plotting the data
+plt.figure(figsize=(10, 6))
 
-    plt.scatter(thrash_instances, reasoner_execution_time, marker='o', label='Reasoner Execution Time')
-    plt.plot(thrash_instances, ontology_execution_time, marker='o', label='Empty ontology execution time', color='orange')
-    plt.plot(mean_reasoner_execution_time.index, mean_reasoner_execution_time, marker='o', label='Mean Reasoner Execution Time', color='red')
+mean_reasoner_execution_time = version_df.groupby('Thrash instance count')['Reasoner Execution Time'].mean()
 
-    plt.xlabel('Thrash instance count')
-    plt.ylabel('Time in seconds')
-    plt.title(f'Reasoner execution time - {version}')
-    plt.legend()
+plt.scatter(thrash_instances, reasoner_execution_time, marker='o', label='Timestamp')
+plt.plot(thrash_instances, ontology_execution_time, marker='o', label='Base', color='red')
+plt.plot(mean_reasoner_execution_time.index, mean_reasoner_execution_time, marker='o', label='Mean', color='olive')
 
-    plt.grid(True)
+plt.xlabel('Trash Instances')
+plt.ylabel('Time in s')
+plt.legend()
 
-    # Display the plot
-    plt.show()  
+plt.grid(True)
+
+# Display the plot
+plt.tight_layout()
+plt.show()  
 

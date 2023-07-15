@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 df = pd.read_excel('my_stats.xlsx')
 
 # Extract the required columns
-ontology_versions = df['Ontology']
+df['Ontology'] = df['Ontology'].astype(str).str[-1]
 ontology_inferences = df['Ontology inferences']
 ontology_subclasses = df['Ontology subclass axioms']
 ontology_thrash_instances = df['Ontology Thrash instance count']
@@ -17,6 +17,9 @@ thrash_instances = df['Thrash instance count']
 reasoner_execution_time = df['Reasoner Execution Time']
 
 dataset_execution_time = df['Entire dataset execution time']
+
+# Increase the font size
+plt.rcParams.update({'font.size': 22})
 
 # Create a line plot for Inferred Triples
 plt.figure(figsize=(10, 6))
@@ -34,9 +37,10 @@ for i, (ontology_version, group) in enumerate(grouped_data):
     datastreams = group['Datastream'].astype(str)
     plt.plot(datastreams, thrash_instances, marker='o', linestyle=line_styles[i % len(line_styles)], color=colors[i % len(colors)], label=ontology_version)
 
-plt.xlabel('Datastream')
-plt.ylabel('Thrash Instances')
-plt.title('Thrash Instances vs. Datastream')
-plt.legend()
+plt.xlabel('Timestamp')
+plt.ylabel('Trash Instances')
+plt.legend(title='Version')
 plt.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)  # Remove x-axis tick labels
+plt.grid(axis='y')
+plt.tight_layout()
 plt.show()

@@ -7,9 +7,12 @@ df = pd.read_excel('my_stats.xlsx')
 # Get the unique versions
 versions = df['Ontology'].unique()
 
+# Increase the font size
+plt.rcParams.update({'font.size': 22})
+
 # Plotting the data
 plt.figure(figsize=(10, 6))
-
+colors = ['red', 'blue', 'green', 'orange', 'olive', 'purple']
 # Iterate over each version and plot the data
 for version in versions:
     # Filter the data for the current version
@@ -26,14 +29,14 @@ for version in versions:
     # Plot the data for the current version
     #plt.scatter(thrash_instances, reasoner_execution_time, marker='o', label=f'{version} - Reasoner Execution Time')
     #plt.plot(thrash_instances, ontology_execution_time, marker='o', label=f'{version} - Empty ontology execution time')
-    plt.scatter(mean_reasoner_execution_time.index, mean_reasoner_execution_time, marker='o', label=f'{version} - Mean Reasoner Execution Time')
+    plt.scatter(mean_reasoner_execution_time.index, mean_reasoner_execution_time, marker='o', color=colors[int(version[-1]) % len(colors)], label=f'{version[-1]}')
 
 plt.xlabel('Inferred Triples')
-plt.ylabel('Time in seconds')
-plt.title('Reasoner execution time vs Inferred Triples')
+plt.ylabel('Time in s')
 plt.legend()
 
 plt.grid(True)
 
 # Display the plot
+plt.tight_layout()
 plt.show()
